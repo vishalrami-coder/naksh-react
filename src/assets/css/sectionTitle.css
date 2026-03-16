@@ -1,0 +1,38 @@
+.secTitle {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.secTitle span {
+    font-size: 14px;
+    margin: 0px;
+    color: #000;
+    font-weight: 600;
+    font-family: 'Roboto Flex';
+    padding: 0px;
+    text-transform: uppercase;
+}
+
+.secTitle h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Roboto Flex';
+    color: #00509e;
+    margin: 0px;
+    text-align: left;
+    line-height: 40px;
+}
+.secTitle p {
+    font-size: 16px;
+    margin: 0px;
+    line-height: 32px;
+    color: #222;
+    font-weight: 400;
+    font-family: 'Roboto Flex';
+}
+
+.secTitle span:empty, .secTitle p:empty, .secTitle h2:empty{
+    display: none;
+}

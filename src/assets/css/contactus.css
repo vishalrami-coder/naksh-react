@@ -1,0 +1,7 @@
+.mapIframe iframe {
+    width: 100%;
+}
+
+.mapIframe {
+    line-height: 0;
+}

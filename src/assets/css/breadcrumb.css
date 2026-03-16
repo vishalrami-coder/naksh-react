@@ -1,0 +1,65 @@
+.cs_page_heading {
+    height: 380px;
+}
+
+.cs_primary_bg {
+    background-color: #010f34;
+}
+
+.cs_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cs_bg_filed {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.cs_page_heading h1 {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Roboto Flex';
+    color: #fff;
+    line-height: normal;
+}
+
+.cs_white_color {
+    color: #fff;
+}
+
+.cs_semibold {
+    font-weight: 600;
+}
+
+.cs_fs_64 {
+    font-size: 64px;
+    line-height: 1.156em;
+}
+
+.cs_page_heading .breadcrumb {
+    margin: 0;
+    justify-content: center;
+    font-size: 14px;
+    margin: 0px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Roboto Flex';
+    letter-spacing: 0.5px;
+}
+
+.cs_page_heading .breadcrumb-item.active {
+    color: #fff;
+}
+
+.cs_page_heading li a {
+    text-decoration: unset;
+    font-size: 14px;
+    margin: 0px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Roboto Flex';
+    letter-spacing: 0.5px;
+}

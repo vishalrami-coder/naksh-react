@@ -1,0 +1,15 @@
+.WhyPartner .secTitle, .teamSec .secTitle {
+    display: grid;
+    grid-template-columns: 1fr 60%;
+    gap: 50px;
+}
+
+.WhyPartner {
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+
+.teamSec {
+    border-bottom: 1px solid #ecf1f5;
+}

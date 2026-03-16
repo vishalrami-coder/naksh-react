@@ -1,0 +1,71 @@
+.icon_box_05.ib5_left {
+    padding-top: 0;
+    padding-left: 59px;
+    text-align: left;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.icon_box_05.ib5_left i {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    margin: auto 0;
+}
+
+.icon_box_05 i {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ecebff;
+    color: #00509e;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_box_05.ib5_left .ib5_inner {
+    padding: 29px 20px 21px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ib5_inner {
+    border: 1px solid #ecebff;
+    background: #FFF;
+}
+
+.icon_box_05.ib5_left .ib5_inner h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Roboto Flex';
+    color: #00509e;
+    line-height: normal;
+    margin: 0px;
+}
+
+.icon_box_05.ib5_left .ib5_inner p {
+    margin: 0px;
+    font-size: 14px;
+    margin: 0px;
+    line-height: 24px;
+    color: #222;
+    font-weight: 500;
+    font-family: 'Roboto Flex';
+}
+
+
+.icon_box_05.ib5_left .ib5_inner a:hover {
+    color: #00509e;
+}
+
+.icon_box_05.ib5_left .ib5_inner a {
+    text-decoration: unset;
+    color: #000;
+}

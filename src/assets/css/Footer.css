@@ -1,0 +1,234 @@
+footer {
+    padding: 50px 0px 0px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.footerLinksWrapper {
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 25% 1fr 1fr 25%;
+    gap: 50px;
+}
+
+.footerLinksItem {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerLinksItem h5 {
+    margin: 0px;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Roboto Flex";
+    color: #00509e;
+}
+
+.footerLinksItem ul li a {
+    text-decoration: unset;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0px;
+    transition: 0.8s ease;
+    font-family: "Roboto Flex";
+    color: #222;
+    margin: 0px;
+}
+
+.footerLinksItem ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footerLinksContent p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 0px;
+    transition: 0.8s ease;
+    font-family: "Roboto Flex";
+    color: #222;
+    margin: 0px;
+}
+
+.footerLinksContent {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form.subscribe-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+}
+
+form.subscribe-form input {
+    padding: 12px 15px;
+    border-radius: 100px;
+    border: 1px solid #2222;
+    font-size: 13px;
+    font-family: 'Roboto Flex';
+    color: #000;
+    font-weight: 400;
+}
+
+form.subscribe-form input::placeholder {
+    font-size: 13px;
+    font-family: 'Roboto Flex';
+    color: #000;
+}
+
+form.subscribe-form button {
+    border: 0px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-family: 'Roboto Flex';
+    color: #fff;
+    font-weight: 400;
+    border-radius: 100px;
+    background: #004281;
+}
+
+.LogoWrapper {
+    border-top: 1px solid #00000014;
+    padding: 6px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.LogoWrapper .socialMedia ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.LogoWrapper .socialMedia ul i {
+    font-size: 20px;
+    color: #004281;
+}
+
+.copyRightText {
+    padding: 20px 0px;
+    border-top: 1px solid #00000014;
+}
+
+.copyRightText p {
+    margin: 0px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto Flex';
+    color: #222;
+}
+
+
+
+
+
+.legal-banner {
+    position: relative;
+    background: linear-gradient(90deg, #0b3157, #00509e);
+    border-radius: 20px;
+    padding: 45px;
+    overflow: hidden;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.Cta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Cta-content h1 {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Roboto Flex';
+    color: #fff;
+    margin: 0px;
+    line-height: normal;
+}
+
+.Cta-content p {
+    opacity: 0.9;
+    font-size: 16px;
+    margin: 0px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto Flex';
+}
+
+.Cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.Cta-btn {
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.Cta-image {
+    position: relative;
+    z-index: 2;
+}
+
+.Cta-image img {
+    max-height: 300px;
+}
+
+/* Decorative big letter */
+.legal-banner::after {
+    content: "N";
+    position: absolute;
+    right: 45px;
+    font-size: 300px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.08);
+    z-index: 1;
+    line-height: 0.6;
+    bottom: 65px;
+}
+
+.Cta-buttons a {
+    font-size: 16px;
+    margin: 0px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto Flex';
+    /* border: 1px solid #125494; */
+    background: #004281;
+}
+
+.Cta-buttons .Cta-btn~.Cta-btn {
+    background: transparent;
+    border: 0px;
+}
+
+
+.socialMedia a {
+    font-size: 20px;
+    color: #000000;
+}
+
+.socialMedia a:hover {
+    color: #003d77;
+}

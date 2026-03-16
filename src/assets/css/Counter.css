@@ -1,0 +1,75 @@
+
+.DarkAboutCounter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    margin: 0px 30px 50px;
+}
+
+.DarkAboutCounterContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 32px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #2222;
+}
+
+.DarkAboutCounterContent h5 {
+    margin: 0px;
+    font-size: 15px;
+    font-family: "Roboto Flex";
+    color: #000000c2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: 0.8s all;
+}
+
+.DarkAboutCounterContent p {
+    margin: 0px;
+    font-size: 15px;
+    line-height: 36px;
+    color: #ffffff94;
+    font-weight: 400;
+    font-family: 'Roboto Flex';
+}
+
+.DarkAboutCounterNum {
+    font-size: 35px;
+    color: #ffffffc2;
+    gap: 6px;
+    font-weight: 500;
+    font-family: "Big Shoulders";
+    line-height: normal;
+    letter-spacing: 2px;
+    transition: 0.8s all;
+    display: flex;
+    margin: 0px auto;
+}
+
+.DarkAboutCounterNum span {
+    font-size: 35px;
+    color: #000000;
+    font-weight: 900;
+    font-family: "Big Shoulders" !important;
+}
+
+.DarkAboutCounterNum em {
+    color: #00509e;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.DarkAboutCounterItem:nth-child(even) .DarkAboutCounterContent {
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.DarkAboutCounterItem:last-child .DarkAboutCounterContent {
+    border-right: 1px solid #2222;
+}

@@ -1,0 +1,122 @@
+.CardTitle {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto Flex";
+    color: #00509e;
+    margin: 0px;
+    text-align: center;
+}
+
+.CardDesc {
+    margin: 0px;
+    font-size: 16px;
+    margin: 0px;
+    line-height: 32px;
+    color: #222;
+    font-weight: 400;
+    font-family: 'Roboto Flex';
+}
+
+.CardIcon {
+    height: 90px;
+    width: 90px;
+    border: 5px solid #ecf1f5;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -45px;
+    background-color: #fff;
+    padding: 15px;
+    transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardContet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.CardBg.cs_type_1 .CardStyle.cs_style_1{
+    padding: 25px 25px 1px 25px;
+}
+
+.CardBg.cs_type_1 .CardStyle.cs_style_1 .CardContet {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.CardBg.cs_type_1 .CardStyle.cs_style_1 .CardIcon {
+    margin-top: 0px;
+    margin-bottom: -45px;
+}
+
+
+.CardBg .cs_card_shape {
+    width: 100%;
+}
+
+.CardBg .cs_card_shape svg {
+    width: 100%;
+}
+
+.CardBg.cs_type_1 {
+    padding: 15px 15px 0px 15px;
+}
+
+.CardBg.cs_type_1 .cs_card_shape {
+    bottom: unset;
+    top: 0;
+}
+
+.CardBg:hover .cs_card_shape svg path {
+    fill: #00509e;
+}
+
+.CardBg .cs_card_shape svg path {
+    transition: 0.8s all;
+}
+
+.CardBg.cs_type_1:hover .CardIcon img, .CardBg:hover .CardIcon img {
+    filter: brightness(0) saturate(100%) invert(15%) sepia(85%) saturate(3359%) hue-rotate(198deg) brightness(92%) contrast(101%);
+}
+
+
+
+.CardBg {
+    position: relative;
+    padding: 0 15px 15px;
+}
+
+.CardStyle.cs_style_1 {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, .08);
+    text-align: center;
+    padding: 1px 30px 25px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.cs_card_1_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 65px 25px;
+    margin-top: 70px;
+}
+
+
+.cs_card_shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #ecf1f5;
+    transition: all .4s ease;
+}
+
+
+.CardIcon img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7435%) hue-rotate(212deg) brightness(110%) contrast(88%);
+}

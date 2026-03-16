@@ -1,0 +1,21 @@
+.readmore {
+    background: #fff;
+    text-decoration: unset;
+    text-transform: capitalize;
+    z-index: 2;
+    border: none;
+    color: #000000;
+    line-height: 1;
+    padding: 15px 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: .5s;
+    font-family: 'Roboto Flex';
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: fit-content;
+    position: relative;
+}

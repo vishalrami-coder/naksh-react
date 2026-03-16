@@ -1,0 +1,70 @@
+.inputWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+/* .cotactForm input,
+.cotactForm textarea {
+    padding: 30px 20px !important;
+    color: #000000 !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    font-family: "Roboto Flex";
+    letter-spacing: 1px;
+    transition: 0.8s all;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid #ecebffc7;
+    box-shadow: unset !important;
+    letter-spacing: 0.1px;
+} */
+
+.cotactForm .inputIconWrapper{
+    padding: 30px 20px !important;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ecebffc7;
+}
+
+.cotactForm .inputIconWrapper input,
+.cotactForm textarea {
+    padding: 0px;
+    border: 0px;
+    box-shadow: unset !important;
+    color: #000000 !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    font-family: "Roboto Flex";
+    letter-spacing: 1px;
+    transition: 0.8s all;
+    border: 0px;
+    border-radius: 0px;
+
+    box-shadow: unset !important;
+    letter-spacing: 0.1px;
+}
+
+.captchaGrid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 50px;
+    align-items: flex-end;
+}
+
+.cotactForm .readmore {
+    background: #00509e;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.cotactForm {
+    padding-left: 40px;
+}
+
+.textareaInput .inputIconWrapper {
+    align-items: self-start;
+}

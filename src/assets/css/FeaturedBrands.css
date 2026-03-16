@@ -1,0 +1,20 @@
+.FeaturedBrandsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.FeaturedBrandsGridItem {
+    padding: 42px 32px;
+    text-align: center;
+    box-shadow: 2px 3px 4px 2px #dadada57;
+    border: 1px solid #2222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffff;
+}
+
+.FeaturedBrands {
+    background: #F5F5F5;
+}

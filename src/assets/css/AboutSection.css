@@ -1,0 +1,105 @@
+
+.aboutContentTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.desc p {
+    margin: 0px;
+    font-size: 16px;
+    margin: 0px;
+    line-height: 32px;
+    color: #222;
+    font-weight: 400;
+    font-family: 'Roboto Flex';
+    padding: 0px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.desc .readmore {
+    color: #fff;
+    background: #00509e;
+}
+
+.extraPoints ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid #ecf1f5;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.extraPoints ul li {
+    font-size: 20px;
+    margin: 0px;
+    color: #788094;
+    font-weight: 600;
+    font-family: 'Roboto Flex';
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.extraPoints {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.experience {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding-right: 60px;
+    border-right: 1px solid #0000001a;
+    border-top: 1px solid #ecf1f5;
+    padding-top: 30px;
+}
+
+.experience h3 {
+    margin: 0px;
+    font-size: 20px;
+    line-height: 1.417em;
+    font-family: 'Roboto Flex';
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.experience h2 {
+    font-size: 80px;
+    line-height: normal;
+    -webkit-text-stroke: 2px #00509e;
+    color: #00509e00;
+    margin: 0px;
+    font-family: 'League Spartan';
+}
+
+.extraPoints ul li i {
+    margin: 0px !important;
+    color: #00509e;
+}
+
+.aboutImg img {
+    width: 100%;
+}
+
+

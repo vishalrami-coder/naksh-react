@@ -1,0 +1,63 @@
+.industriesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.industryImg img {
+    width: 100%;
+    min-height: 357px;
+    object-fit: cover;
+}
+
+.industriesGrid .industryCard {
+    position: relative;
+    overflow: hidden;
+}
+
+.industriesGrid .industryCard .industryTitle {
+    padding: 20px;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Roboto Flex';
+    line-height: normal;
+    transition: 0.8s all;
+}
+
+
+.industryContent {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #022f5bbd;
+    left: -100%;
+    transition: 0.8s all;
+    z-index: 11;
+}
+
+.industriesGrid .industryCard:hover .industryContent {
+    left: 0;
+}
+
+.industriesGrid .industryCard:hover .industryContent h4 {
+    color: #fff;
+}
+
+.industryImg {
+    position: relative;
+}
+
+.industryImg:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #00000066, transparent);
+    position: absolute;
+    z-index: 1;
+}

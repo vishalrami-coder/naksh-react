@@ -1,0 +1,245 @@
+
+
+.gallery {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.gallery-slider {
+    width: 100%;
+    /* height: auto; */
+    /* margin: 0 0 10px 0; */
+}
+
+.gallery-slider .swiper-slide {
+    width: auto;
+    /* height: 400px; */
+}
+
+.gallery-slider .swiper-slide img {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.gallery-thumbs {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.gallery-thumbs .swiper-slide {
+    text-align: center;
+}
+
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+
+.gallery-thumbs .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.serviceCard {
+    height: 228px;
+    position: relative;
+    max-width: 282px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.serviceCardWrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.serviceCardImg img {
+    width: 60px !important;
+}
+
+.serviceCardBgImg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+img.serviceCardBgImg1 {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    opacity: .24;
+    width: 80px !important;
+    height: 80px !important;
+}
+
+img.serviceCardBgImg2 {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    opacity: .24;
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.serviceCardWrapper .service_cardT {
+    margin: 0px;
+    font-size: 18px;
+    line-height: 1.417em;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Roboto Flex';
+}
+
+
+.serviceCardBgImg svg path:last-child {
+    fill: #fff;
+}
+
+.serviceCardBgImg svg path:first-child {
+    fill: #00509e;
+}
+
+.serviceDetails {
+    padding: 52px 100px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.serviceDetailsCard {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #2222;
+    justify-content: space-between;
+}
+
+.serviceDetails h2 {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Roboto Flex";
+    color: #00509e;
+    margin: 0px;
+    text-align: left;
+}
+
+.serviceDetails p {
+    font-size: 16px;
+    margin: 0px;
+    line-height: 32px;
+    color: #222;
+    font-weight: 400;
+    font-family: 'Roboto Flex';
+    padding: 0px;
+}
+
+.serviceDetails ul {
+    list-style: none;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 15px 0px;
+}
+
+.serviceDetails ul li {
+    font-size: 16px;
+    margin: 0px;
+    font-family: 'Roboto Flex';
+    padding: 0px;
+    font-weight: 500;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.serviceDetails ul li i {
+    font-size: 20px;
+}
+
+.serviceDetails .readmore {
+    background: #00509e;
+    color: #fff;
+}
+
+.serviceCard.active .serviceCardBgImg svg path:first-child {
+    fill: #010f34;
+}
+
+.serviceCard.active .serviceCardBgImg svg path:last-child {
+    fill: #00509e;
+}
+
+.serviceCard.active .serviceCardImg img {
+    filter: brightness(0) invert(1);
+}
+
+.serviceCard.active .service_cardT {
+    color: #fff;
+}
+
+.serviceCard.active .serviceCardBgImg1 {
+    filter: brightness(0) invert(1);
+}
+
+.serviceCard.active .serviceCardBgImg2 {
+    filter: brightness(0) invert(1);
+}
+
+.emailBtn {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    width: fit-content;
+    background: #0c5a97;
+    margin: 0px;
+}
+
+.emailBtn .readmore {
+    margin: 0px !important;
+    border-radius: 0px;
+    padding: 15px;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+}
+
+.emailBtn>.readmore:before {
+    content: '';
+    width: 1.5px;
+    height: 50%;
+    position: absolute;
+    background: #fff;
+    right: 0;
+}
+
+.emailBtn>.readmore~.readmore:before {
+    display: none;
+}
+
+.serviceCardBgImg svg {
+    width: 100%;
+}
+
+.serviceDetails ul li svg {
+    color: #00509e;
+}
