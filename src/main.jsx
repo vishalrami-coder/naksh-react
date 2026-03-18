@@ -15,7 +15,7 @@ import "odometer/themes/odometer-theme-default.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/nakshNewPage/naksh">
       <App />
     </BrowserRouter>
   </React.StrictMode>
