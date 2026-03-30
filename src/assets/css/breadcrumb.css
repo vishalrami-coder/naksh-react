@@ -63,3 +63,19 @@
     font-family: 'Roboto Flex';
     letter-spacing: 0.5px;
 }
+
+.breadcrumb .breadcrumb-item::before {
+    display: none;
+}
+
+.breadcrumb-item {
+    display: flex;
+    gap: 10px;
+    padding: 0px !important;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

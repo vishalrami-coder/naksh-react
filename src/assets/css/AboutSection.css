@@ -1,4 +1,3 @@
-
 .aboutContentTitle {
     display: flex;
     flex-direction: column;
@@ -7,29 +6,33 @@
 
 
 .aboutContent {
+    padding-left: 65px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    height: 100%;
     justify-content: center;
-    padding-left: 30px;
+    height: 100%;
+    gap: 15px;
+    position: relative;
+
 }
 
 .desc p {
     margin: 0px;
-    font-size: 16px;
+    font-size: 15px;
     margin: 0px;
-    line-height: 32px;
-    color: #222;
+    line-height: 30px;
+    color: #444;
     font-weight: 400;
     font-family: 'Roboto Flex';
     padding: 0px;
 }
 
-.desc {
+.desc,
+.desc>p>div,
+.desc>p {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
 }
 
 .desc .readmore {
@@ -100,6 +103,8 @@
 
 .aboutImg img {
     width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+    object-fit: contain;
+    padding: 40px;
 }
-
-

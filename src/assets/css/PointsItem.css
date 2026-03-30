@@ -1,0 +1,76 @@
+.pointsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.pointsGrid .pointsItem {
+    padding: 25px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid #2929291a;
+}
+
+.pointsGrid .pointsItem ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.pointsGrid .pointsItem h5 {
+    margin: 0px;
+}
+
+.pointsGrid .pointsItem li i {
+    padding-right: 6px;
+    color: #00509e;
+}
+
+.pointsGrid .pointsItem li p {
+    font-size: 15px;
+    margin: 0px;
+    line-height: 32px;
+    color: #444;
+    font-weight: 400;
+    font-family: 'Roboto Flex';
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pointsGrid .pointsItem h5 {
+    line-height: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0px;
+    font-size: 16px;
+    color: #000;
+    font-family: "Roboto Flex";
+    font-weight: 700;
+    transition: 0.8s all;
+    letter-spacing: 0.5px;
+}
+
+.pointsGrid .pointsItem li p svg {
+    font-size: 20px;
+    color: #024d97;
+}
+
+.pointsGrid .pointsItem li p:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: transparent;
+    transform: rotate(45deg);
+    border-top: 2.5px solid #00509e;
+    border-right: 2.5px solid #00509e;
+}

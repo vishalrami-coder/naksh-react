@@ -1,5 +1,5 @@
 
-import "../assets/css/home.css";
+import React, { useEffect } from "react";
 import AboutSection from "../components/AboutSection";
 import Counter from "../components/Counter";
 import FeaturedBrands from "../components/FeaturedBrands";
@@ -8,26 +8,57 @@ import IndustriesSection from "../components/IndustriesSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "../components/Button";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchBrands } from "../features/brand/brandSlice";
 
-import siemens from "../assets/images/brands/siemens.webp";
-import huceen from "../assets/images/brands/huceen.webp";
-import schneider from "../assets/images/brands/schneider-electric.webp";
-import pepperl from "../assets/images/brands/pepperl-fuchs.webp";
-// Images Import
+import "../assets/css/home.css";
+import { ShimmerText } from "react-shimmer-effects";
 
 function Home() {
+  const dispatch = useDispatch();
 
-  const brands = [
-    { img: siemens, name: "Siemens" },
-    { img: huceen, name: "Huceen" },
-    { img: schneider, name: "Schneider Electric" },
-    { img: pepperl, name: "Pepperl Fuchs" }
-  ];
+  const { data: products, loading, error } = useSelector(
+    (state) => state.brand
+  );
+
+  useEffect(() => {
+    if (!loading && products.length === 0) {
+      dispatch(fetchBrands());
+    }
+  }, [dispatch, products.length, loading]);
+
 
   return (
     <>
       <HeroSlider />
-      <FeaturedBrands mainTitle={"Featured Brands"} brands={brands} />
+      {/* ✅ SHIMMER LOADING */}
+      {loading && (
+        <section className="FeaturedBrands bgGrey CustomPeding">
+          <div className="container">
+            <div class="secTitle">
+              <ShimmerText className="h2shimmer-box" line={1} />
+            </div>
+            <div className="FeaturedBrandsGrid">
+              {Array(6)
+                .fill("")
+                .map((_, index) => (
+                  <ShimmerText className="FeaturedBrandsShimmer-box" line={1} />
+                ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ❌ ERROR */}
+      {error && <p style={{ color: "red" }}>{error}</p>}
+
+      {/* ✅ ACTUAL DATA */}
+      {!loading && !error && (
+        <FeaturedBrands
+          mainTitle="Featured Brands"
+          brands={products}
+        />
+      )}
       <AboutSection>
         <p>
           NAKSH TECHNOLOGY SOLUTIONS LLP, located in Ahmedabad, India, is a top supplier of Siemens automation products. We offer a wide range of solutions, including PLCs, AC Drives, Servo Systems, HMIs, SCADA systems, and IPCs. Our products boost efficiency and productivity while providing tailored solutions for maximum performance and reliability.

@@ -1,7 +1,147 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=League+Spartan:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 
+:root {
+    --main-container: 1500px;
+    --container-gutters: 24px;
+}
 
 .CustomPeding {
     padding: 80px 0px;
 }
 
+
+.productSec {
+    position: relative;
+}
+
+
+.innerPage .productGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.borderBottom {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.bgGrey {
+    background: #f4f4f4;
+}
+
+@media (min-width: 1441px) {
+
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: calc(var(--main-container) + var(--container-gutters)) !important;
+        padding-left: calc(var(--container-gutters) / 2) !important;
+        padding-right: calc(var(--container-gutters) / 2) !important;
+    }
+}
+
+
+.shimmer-box {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            #e0e0e0 25%,
+            #f5f5f5 50%,
+            #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.secTitle .spanShimmer-box {
+    width: 55px;
+    height: 21px;
+    display: block;
+    border-radius: 8px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.secTitle .h2shimmer-box {
+    width: 96px;
+    height: 40px;
+    border-radius: 8px;
+    display: block;
+    margin: 0px;
+    box-shadow: 2px 3px 4px 2px #dadada57;
+    border: 1px solid #4444440f;
+}
+
+.secTitle .h2shimmer-box .shimmer,
+.productDetails .aboutImg .aboutImgShimmer-box .shimmer,
+.secTitle .spanShimmer-box .shimmer {
+    height: 100% !important;
+}
+
+.desc p.shimmer-box {
+    height: 90px;
+}
+
+.productDetails .aboutImg .aboutImgShimmer-box {
+    height: 552px;
+    border: 0px;
+    margin: 0px;
+    overflow: hidden !important;
+}
+
+.desc .shimmer-text-line {
+    height: 30px;
+}
+
+.productListing .productImage .shimmer {
+    width: 100% !important;
+    height: 388px;
+}
+
+
+.productListing .productImage .shimmer {
+    width: 100% !important;
+    height: 388px;
+}
+
+.productListing .productImage .grid {
+    margin: 0px;
+}
+
+.productListing .productContent .grid {
+    margin: 0px;
+    width: 100px;
+    margin: auto;
+    border-radius: -30px !important;
+}
+
+.productListing .productContent .grid .shimmer {
+    height: 17px;
+    border-radius: 4px;
+}
+
+.FeaturedBrandsGrid .FeaturedBrandsShimmer-box {
+    width: 100%;
+    object-fit: scale-down;
+    aspect-ratio: 82 / 61;
+    border-radius: 16px;
+    margin: 0px !important;
+    box-shadow: 2px 3px 4px 2px #dadada57;
+    border: 1px solid #4444440f;
+}
+
+.FeaturedBrandsGrid .FeaturedBrandsShimmer-box .shimmer {
+    height: 100% !important;
+}

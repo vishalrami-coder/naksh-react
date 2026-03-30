@@ -1,0 +1,42 @@
+.MainPageTab {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    background: #fff;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid #cfcfcf52;
+    width: fit-content;
+    position: relative;
+    z-index: 11;
+}
+
+.MainPageTab button {
+    padding: 17px 25px !important;
+    border-radius: 100px !important;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: auto;
+    color: #000;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    opacity: 0.6;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+}
+
+.MainPageTab button.active {
+    background: #00509e !important;
+    opacity: 1;
+    border: transparent !important;
+}
+
+.MainPageTab button:hover {
+    color: #000;
+}
+
+.TechnicalDetailsTabingWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+}

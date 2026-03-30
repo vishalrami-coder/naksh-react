@@ -1,0 +1,94 @@
+.TechnicalDetailsContentWrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 35px;
+    background: #fff;
+    gap: 15px;
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid #d8d8d869;
+}
+
+.TechImg img {
+    width: 100%;
+    object-fit: scale-down;
+    border-radius: 10px;
+}
+
+.TechnicalDetailsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.TechnicalDetailsContent ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.TechnicalDetailsContent ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 16px;
+    background: #f5f5f5;
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px solid #0000000d;
+}
+
+.TechnicalDetailsContent ul li h4,
+.TechnicalDetailsContent ul li p {
+    margin: 0px;
+}
+
+.TechnicalDetailsContent ul li h4 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto Flex";
+    color: #000;
+}
+
+.TechnicalDetailsContent ul li p {
+    font-size: 14px;
+    font-family: "Roboto Flex";
+    margin: 0px;
+    color: #000;
+    font-weight: 500;
+}
+
+.TechImg {
+    border-radius: 20px;
+    max-width: 300px;
+}
+
+.TechnicalDetailsContent .aboutSmallTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.TechnicalDetailsContent .aboutSmallTitle h2 {
+    font-size: 18px;
+    color: #000;
+    font-family: "Roboto Flex";
+    font-weight: 700;
+    transition: 0.8s all;
+    margin: 0px;
+}
+
+.aboutSmallTitle p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 15px;
+    margin: 0px;
+    line-height: 32px;
+    color: #444;
+    font-weight: 400;
+    font-family: 'Roboto Flex';
+}

@@ -1,0 +1,119 @@
+.productItem .productImage img {
+    width: 100%;
+    object-fit: scale-down;
+    aspect-ratio: 1 / 1;
+}
+
+.productItem {
+    background: #2c292924;
+    border: 1px solid #4444440f;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.8s all;
+    cursor: pointer;
+}
+
+.productImage {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    padding: 15px;
+}
+
+.spanTag p {
+    margin: 0px;
+    padding: 5px 10px;
+    background: #00000087;
+    border-radius: 6px;
+    color: #ffff;
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    font-size: 13px;
+    backdrop-filter: blur(15px);
+}
+
+.spanTag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.productContent h4 {
+    margin: 0px;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Roboto Flex';
+    font-weight: 600;
+    transition: 0.8s all;
+}
+.productContent {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+
+.productDetails .aboutImg {
+    padding: 25px;
+    border: 1px solid #cfcfcf75;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.systemOverviewSwiper .swiper-button-prev {
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: #0000001a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    backdrop-filter: blur(15px);
+}
+
+
+
+.systemOverviewSwiper .swiper-button-next {
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: #0000001a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border-radius: 50px;
+    backdrop-filter: blur(15px);
+}
+
+.systemOverviewSwiper .swiper-button-prev svg,
+.systemOverviewSwiper .swiper-button-next svg {
+    color: #fff;
+    width: 10px;
+}
+
+.systemOverviewSwiper .swiper-pagination {
+    width: fit-content !important;
+    margin: 0px auto;
+    left: 50% !important;
+    transform: translate(-50%, 0px);
+    background: #0000000f;
+    padding: 14px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    bottom: 0 !important;
+}
+
+.systemOverviewSwiper .swiper-pagination .swiper-pagination-bullet {
+    margin: 0px !important;
+}
+
+.systemOverviewSwiper .swiper-pagination .swiper-pagination-bullet-active {
+    width: 20px;
+    background: #00509e;
+    border-radius: 12px;
+}

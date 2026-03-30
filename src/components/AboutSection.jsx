@@ -1,6 +1,4 @@
 import aboutImg from "../assets/images/about-us.webp";
-
-
 import '../assets/css/AboutSection.css'
 
 import SectionTitle from "./SectionTitle";

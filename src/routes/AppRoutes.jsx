@@ -3,7 +3,9 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Industries from "../pages/Industries";
 import ContactUs from "../pages/ContactUs";
-import Products from "../pages/Product";
+import Brand from "../pages/Brand";
+import Categories from "../pages/Categories";
+import BrandDetails from "../pages/BrandDetails";
 
 function AppRoutes() {
   return (
@@ -12,9 +14,9 @@ function AppRoutes() {
       <Route path="/about-us" element={<About />} />
       <Route path="/industries" element={<Industries />} />
       <Route path="/contact-us" element={<ContactUs />} />
-      <Route path="/products" element={<Products />} />
-
-
+      <Route path="/products" element={<Brand />} />
+      <Route path="/products/*" element={<Categories />} />
+      <Route path="/productsdetails/*" element={<BrandDetails />} />
     </Routes>
   );
 }
