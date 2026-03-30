@@ -6,6 +6,9 @@ import ContactUs from "../pages/ContactUs";
 import Brand from "../pages/Brand";
 import Categories from "../pages/Categories";
 import BrandDetails from "../pages/BrandDetails";
+import BlogPage from "../pages/BlogPage";
+import BlogDetails from "../pages/BlogDetails";
+import CategoryPage from "../pages/CategoryPage";
 
 function AppRoutes() {
   return (
@@ -17,6 +20,9 @@ function AppRoutes() {
       <Route path="/products" element={<Brand />} />
       <Route path="/products/*" element={<Categories />} />
       <Route path="/productsdetails/*" element={<BrandDetails />} />
+      <Route path="/blogs" element={<BlogPage />} />
+      <Route path="/blogs/:slug" element={<BlogDetails />} />
+      <Route path="/category/:slug" element={<CategoryPage />} />
     </Routes>
   );
 }

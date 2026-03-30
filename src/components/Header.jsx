@@ -49,11 +49,11 @@ function Header() {
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact-us">Contact Us</Link>
+                  <Link className="nav-link" to="/blogs">Blogs</Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/blogs">Blogs</Link>
+                  <Link className="nav-link" to="/contact-us">Contact Us</Link>
                 </li>
 
               </ul>

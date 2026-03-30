@@ -20,7 +20,7 @@ import "odometer/themes/odometer-theme-default.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/nakshNewPage/naksh">
+    <BrowserRouter basename="/nakshNewPage">
       <Provider store={store}>
         <App />
       </Provider>
