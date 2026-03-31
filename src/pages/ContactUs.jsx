@@ -1,21 +1,16 @@
 import Breadcrumb from "../components/breadcrumb";
 import "../assets/css/contactus.css";
 import ContactInfoCard from "../components/ContactInfoCard";
-
-import {
-  faFacebook,
-  faInstagram,
-  faXTwitter,
-  faWhatsapp,
-  faCanadianMapleLeaf,
-} from "@fortawesome/free-brands-svg-icons";
-
 import { MdOutlineLocationOn } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";
 import { FaHeadset } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ContactForm from "../components/ContactForm";
 import SectionTitle from "../components/SectionTitle";
+import ContactUsBread from "../assets/images/breadcum/contact-us.webp";
+
+
+
 
 
 function ContactUs() {
@@ -57,6 +52,7 @@ function ContactUs() {
       <Breadcrumb
         BreadcrumbTitle="Contact Us"
         BreadcrumbActiveTitle="Contact Us"
+        backgroundImage={`url(${ContactUsBread})`}
       />
       <section className="commonSection CustomPeding">
         <div className="container">

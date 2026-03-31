@@ -5,6 +5,7 @@ import BlogCard from "../components/BlogCard";
 import Breadcrumb from "../components/breadcrumb";
 import "../assets/css/blogPage.css";
 import { ShimmerText } from "react-shimmer-effects";
+import BlogBread from "../assets/images/breadcum/blogs.webp";
 
 
 const BlogPage = () => {
@@ -20,6 +21,7 @@ const BlogPage = () => {
             <Breadcrumb
                 BreadcrumbTitle="Blogs"
                 BreadcrumbActiveTitle="Blogs"
+                backgroundImage={`url(${BlogBread})`}
             />
 
             <div className="blogListing CustomPeding">

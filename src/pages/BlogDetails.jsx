@@ -6,6 +6,7 @@ import Breadcrumb from "../components/breadcrumb";
 import "../assets/css/BlogDetails.css";
 import { FaCaretRight } from "react-icons/fa6";
 import { ShimmerText } from "react-shimmer-effects";
+import BlogBread from "../assets/images/breadcum/blogs.webp";
 
 
 const BlogDetails = () => {
@@ -25,6 +26,7 @@ const BlogDetails = () => {
             <Breadcrumb
                 BreadcrumbTitle="Blogs"
                 BreadcrumbActiveTitle="Blogs"
+                backgroundImage={`url(${BlogBread})`}
             />
 
             {loading &&

@@ -7,7 +7,7 @@ import "../assets/css/blogPage.css";
 import { ShimmerText } from "react-shimmer-effects";
 import { useParams } from "react-router-dom";
 import noDataFoundImg from '../assets/images/noDataFound.jpg'
-
+import BlogBread from "../assets/images/breadcum/blogs.webp";
 
 const CategoryPage = () => {
 
@@ -29,6 +29,7 @@ const CategoryPage = () => {
             <Breadcrumb
                 BreadcrumbTitle="Blogs"
                 BreadcrumbActiveTitle="Blogs"
+                backgroundImage={`url(${BlogBread})`}
             />
 
             <div className="blogListing CustomPeding">

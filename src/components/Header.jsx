@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
-import NakshLogo from "../assets/images/naksh-logo.svg";
+import NakshLogo from "../assets/images/naksh-logo.webp";
 import SearchModal from "./SearchModal";
 import { Button } from "./Button";
 import "../assets/css/Header.css";

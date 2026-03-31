@@ -1,7 +1,7 @@
 import "../assets/css/breadcrumb.css";
 import { useLocation, Link } from "react-router-dom";
 
-function Breadcrumb() {
+function Breadcrumb({ backgroundImage }) {
     const location = useLocation();
 
     // 🔥 unwanted paths remove (customize as per your project)
@@ -26,7 +26,7 @@ function Breadcrumb() {
             className="cs_page_heading cs_bg_filed cs_center cs_primary_bg text-center"
             style={{
                 backgroundImage:
-                    "url('https://arkdin-nextjs.vercel.app/assets/img/page_heading_1.jpg')",
+                    backgroundImage
             }}
         >
             <div className="container">

@@ -4,6 +4,8 @@ import FeaturedBrands from "../components/FeaturedBrands";
 import Breadcrumb from "../components/breadcrumb";
 import { fetchBrands } from "../features/brand/brandSlice";
 import { ShimmerText } from "react-shimmer-effects";
+import BrandBread from "../assets/images/breadcum/product.webp";
+
 
 const Brand = () => {
     const dispatch = useDispatch();
@@ -23,6 +25,7 @@ const Brand = () => {
             <Breadcrumb
                 BreadcrumbTitle="Our Product"
                 BreadcrumbActiveTitle="Our Product"
+                backgroundImage={`url(${BrandBread})`}
             />
 
             {/* ✅ SHIMMER LOADING */}

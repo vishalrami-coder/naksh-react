@@ -6,6 +6,8 @@ import app4 from "../assets/images/app/machine-plant-engineering.webp";
 import app5 from "../assets/images/app/pharma-industry.webp";
 import app6 from "../assets/images/app/plastic-paper-industry.webp";
 
+import IndustriesBread from "../assets/images/breadcum/industries.webp";
+
 import "../assets/css/Industries.css";
 
 
@@ -44,6 +46,7 @@ function Industries() {
             <Breadcrumb
                 BreadcrumbTitle="Industries"
                 BreadcrumbActiveTitle="Industries"
+                backgroundImage={`url(${IndustriesBread})`}
             />
 
             <div className="industriesSec CustomPeding">

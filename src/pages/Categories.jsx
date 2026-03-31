@@ -9,6 +9,8 @@ import { useNavigate } from "react-router-dom";
 import FAQSection from "../components/FAQSection";
 import ProductTabs from "../components/ProductTabs";
 import { ShimmerText } from "react-shimmer-effects";
+import BrandBread from "../assets/images/breadcum/product.webp";
+
 
 const Categories = () => {
     // const { slug } = useParams();
@@ -46,6 +48,7 @@ const Categories = () => {
             <Breadcrumb
                 BreadcrumbTitle={data?.parent?.name}
                 BreadcrumbActiveTitle={data?.parent?.name}
+                backgroundImage={`url(${BrandBread})`}
             />
 
             <div className="innerPage">

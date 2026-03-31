@@ -4,6 +4,7 @@ import Breadcrumb from "../components/breadcrumb";
 import Card from "../components/Card";
 import SectionTitle from "../components/SectionTitle";
 import TeamMemberCard from "../components/TeamMemberCard";
+import AboutUsBread from "../assets/images/breadcum/about-us.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -86,6 +87,7 @@ function About() {
       <Breadcrumb
         BreadcrumbTitle="About Us"
         BreadcrumbActiveTitle="About Us"
+        backgroundImage={`url(${AboutUsBread})`}
       />
       <AboutSection>
         <p>

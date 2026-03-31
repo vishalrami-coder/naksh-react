@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import '../assets/css/Footer.css'
-import NakshLogo from "../assets/images/naksh-logo.svg";
+import NakshLogo from "../assets/images/naksh-logo.webp";
 
 function Footer() {
   return (

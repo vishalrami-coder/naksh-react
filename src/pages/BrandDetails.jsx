@@ -11,6 +11,7 @@ import "../assets/css/BrandDetails.css";
 import PointsItem from "../components/PointsItem";
 import ProductImageSection from "../components/ProductImageSection";
 import ProductDetailsWithTabs from "../components/ProductDetailsWithTabs";
+import BrandDetailsBread from "../assets/images/breadcum/product.webp";
 
 const BrandDetails = () => {
     const { "*": fullPath } = useParams();
@@ -97,6 +98,7 @@ const BrandDetails = () => {
                 BreadcrumbActiveTitle={data?.product_name}
                 extraLevel={true}
                 extraLevelActiveTitle={data?.parent?.name}
+                backgroundImage={`url(${BrandDetailsBread})`}
             />
             <div className="DetailsPage">
                 <ProductDetails
