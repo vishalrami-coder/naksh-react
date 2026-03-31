@@ -22,6 +22,7 @@ function AppRoutes() {
       <Route path="/productsdetails/*" element={<BrandDetails />} />
       <Route path="/blogs" element={<BlogPage />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
+      <Route path="/category" element={<BlogPage />} />
       <Route path="/category/:slug" element={<CategoryPage />} />
     </Routes>
   );

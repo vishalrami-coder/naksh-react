@@ -144,41 +144,8 @@ const Categories = () => {
                                 ))}
                             </div>
                         )}
-                        {/* {data?.parent?.products?.length > 0 ?
-                            <> <div className="productGrid">
-                                {data?.parent?.products?.map((item, index) => (
-                                    <ProductCard key={index}
-                                        image={item?.main_image}
-                                        title={item?.product_name}
-                                        brand={formatSlug(data?.parent?.name)}
-                                        onClick={() => {
-                                            navigate(`/productsdetails/${fullPath}/${item?.slug}`)
-                                        }} />
-                                ))}
-                            </div></> :
-                            <>
-                                {tabsData?.length > 0 ? (
-                                    <ProductTabs tabsData={tabsData} />
-                                ) : (
-                                    <div className="productGrid">
-                                        {data?.data?.map((item, index) => (
-                                            <ProductCard key={index}
-                                                image={item?.image_url}
-                                                title={item?.name}
-                                                brand={formatSlug(data?.parent?.name)}
-                                                onClick={() => {
-                                                    navigate(`/products/${fullPath}/${item?.slug}`)
-                                                }}
-                                            />
-                                        ))}
-                                    </div>
-                                )}
-                            </>
-                        } */}
-
                     </div>
                 </div>
-
 
 
                 {data?.parent?.faq_items?.length > 0 &&

@@ -5,6 +5,7 @@ import { fetchBlogDetails, fetchBlogsCategories } from "../features/blog/blogSli
 import Breadcrumb from "../components/breadcrumb";
 import "../assets/css/BlogDetails.css";
 import { FaCaretRight } from "react-icons/fa6";
+import { ShimmerText } from "react-shimmer-effects";
 
 
 const BlogDetails = () => {
@@ -26,7 +27,32 @@ const BlogDetails = () => {
                 BreadcrumbActiveTitle="Blogs"
             />
 
-            {loading && <p>Loading...</p>}
+            {loading &&
+                <div className="BlogDetailsWapper CustomPeding BlogDetailsLoaderWapper">
+                    <div className="container">
+                        <div className="BlogDetailsGrid">
+                            <div className="BlogDetailsItem">
+                                <div className="BlogDetailsImg">
+                                    <ShimmerText className="BlogDetailsImgShimmer-box" line={1} />
+                                </div>
+                                <ShimmerText className="blogDetailsTitle blogDetailsTitleShimmer-box" line={1} />
+                                <ShimmerText className="BlogDetailsContent BlogDetailsContentShimmer-box" line={5} gap={10} />
+                            </div>
+                            <div className="BlogDetailsCategoriesItem">
+                                <ShimmerText className="BlogDetailsCategoriesTitleShimmer-box" line={1} gap={10} />
+                                <div className="BlogDetailsCategoriesListing">
+                                    <ul>
+                                        {Array(6)
+                                            .fill("")
+                                            .map((_, index) => (
+                                                <ShimmerText key={index} className="BlogDetailsContentShimmer-box" line={1} gap={10} />
+                                            ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>}
 
             {!loading && blogDetails && (
                 <>

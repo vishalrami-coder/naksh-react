@@ -6,6 +6,7 @@ import Breadcrumb from "../components/breadcrumb";
 import "../assets/css/blogPage.css";
 import { ShimmerText } from "react-shimmer-effects";
 import { useParams } from "react-router-dom";
+import noDataFoundImg from '../assets/images/noDataFound.jpg'
 
 
 const CategoryPage = () => {
@@ -60,6 +61,15 @@ const CategoryPage = () => {
                             {categoryBlogs?.data?.map((blog, index) => (
                                 <BlogCard key={index} blog={blog} />
                             ))}
+                        </div>
+                    )}
+
+
+                    {!loadingCategoryBlogs && categoryBlogs?.data?.length === 0 && (
+                        <div className="NoDataFound">
+                            <img src={noDataFoundImg} alt="" />
+
+                            <h5>No Category Found — Please Try Another Category </h5>
                         </div>
                     )}
 

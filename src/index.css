@@ -212,3 +212,73 @@
 .blogImg .blogImgShimmer-box {
     margin: 0px;
 }
+
+
+.BlogDetailsImg .BlogDetailsImgShimmer-box .shimmer-text-line {
+    height: 316px;
+}
+
+.BlogDetailsItem .blogDetailsTitleShimmer-box .shimmer-text-line {
+    height: 28px;
+    width: 100px !important;
+    border-radius: 4px !important;
+}
+
+.BlogDetailsItem .blogDetailsTitleShimmer-box,
+.BlogDetailsItem .BlogDetailsContentShimmer-box {
+    margin: 0px;
+}
+
+.BlogDetailsItem .BlogDetailsContentShimmer-box .shimmer-text-line {
+    height: 60px;
+    top: -60px;
+    position: relative;
+}
+
+
+.BlogDetailsCategoriesListing .BlogDetailsContentShimmer-box {
+    padding: 15px;
+    border-bottom: 1px solid #00000014;
+    margin: 0px;
+}
+
+.BlogDetailsCategoriesListing .BlogDetailsContentShimmer-box .shimmer-text-line {
+    width: 190px !important;
+    height: 20px;
+    border-radius: 5px !important;
+}
+
+.BlogDetailsCategoriesItem .BlogDetailsCategoriesTitleShimmer-box {
+    padding: 0px 0px 20px;
+    margin: 0;
+    border-bottom: 1px solid #00000014;
+}
+
+.BlogDetailsCategoriesItem .BlogDetailsCategoriesTitleShimmer-box .shimmer {
+    width: 110px !important;
+    height: 28px;
+    border-radius: 4px !important;
+}
+
+.NoDataFound {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.NoDataFound img {
+    width: 100%;
+    max-width: 20%;
+    margin: auto;
+    border: 1px solid #0000000d;
+    border-radius: 20px;
+}
+
+.NoDataFound h5 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Roboto Flex';
+    color: #024a92;
+    line-height: normal;
+}
