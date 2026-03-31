@@ -4,6 +4,7 @@ import categoriesReducer from "../features/categories/CategoriesSlice";
 import brandDetailsReducer from "../features/brandDetails/brandDetailSlice";
 import searchReducer from "../features/searchSlice/searchSlice";
 import blogReducer from "../features/blog/blogSlice";
+import MenuReducer from "../features/menu/menuSlice";
 
 
 export const store = configureStore({
@@ -13,5 +14,6 @@ export const store = configureStore({
         brandDetails: brandDetailsReducer,
         search: searchReducer,
         blog: blogReducer,
+        menu: MenuReducer,
     },
 });

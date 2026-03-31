@@ -52,3 +52,105 @@
 }
 
 /* header */
+
+
+.customHeader ul.navbar-nav .productDropdown {
+    position: unset !important;
+}
+
+.customHeader ul.navbar-nav .productDropdown .dropdown-menu {
+    width: 100%;
+    left: 0;
+    top: 107px;
+    border: 0px;
+    border-radius: 0px;
+    width: 100%;
+    z-index: 999;
+    min-width: 200px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 32px 64px;
+    transform: translateY(9px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+.customHeader .container {
+    position: relative;
+}
+
+
+.customHeader .navbar-brand {
+    padding: 0px;
+}
+
+.customHeader nav.navbar {
+    padding: 0px;
+}
+
+.customHeader .nav-item {
+    padding: 38px 0px;
+}
+
+.ProductGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto;
+    gap: 50px;
+}
+
+.ProductItem h5 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Roboto Flex';
+    color: #00509e;
+    margin: 0px;
+    text-align: left;
+    border-bottom: 1px solid #4444;
+    padding-bottom: 15px;
+}
+
+.ProductItem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ProductItem ul {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ProductItem ul a {
+    text-decoration: none;
+    color: #666;
+    text-align: left;
+    cursor: pointer;
+    margin: 0;
+    font-family: Roboto Flex;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: 0.8s all;
+    gap: 10px;
+}
+
+.ProductItem ul a:hover , .ProductItem ul a:hover svg{
+    color: #00509e;
+}
+
+.ProductItem ul a svg {
+    color: #444;
+}
+
+.ProductItem ul li {
+    text-align: left;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    transition: all .8s;
+    display: flex;
+}

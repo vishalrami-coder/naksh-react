@@ -1,12 +1,30 @@
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
-import { Button } from "./Button";
-
-import "../assets/css/Header.css";
+import NakshLogo from "../assets/images/naksh-logo.svg";
 import SearchModal from "./SearchModal";
+import { Button } from "./Button";
+import "../assets/css/Header.css";
+import { fetchMenu } from "../features/menu/menuSlice";
+import { FaCaretRight } from "react-icons/fa6";
 
 function Header() {
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const dispatch = useDispatch();
+  const { data, loading } = useSelector((state) => state.menu);
+
+  useEffect(() => {
+    dispatch(fetchMenu());
+  }, [dispatch]);
+
+  console.log(data, 'data');
+
+
+
   return (
     <>
       <div className="customHeader">
@@ -15,7 +33,7 @@ function Header() {
 
             <Link className="navbar-brand" to="/">
               <img
-                src="https://nakshtechnology.in/assets/images/naksh-technology-solution-llp-logo.svg"
+                src={NakshLogo}
                 alt="logo"
               />
             </Link>
@@ -40,10 +58,57 @@ function Header() {
                   <Link className="nav-link" to="/about-us">About Us</Link>
                 </li>
 
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" to="/products">Products</Link>
-                </li>
+                </li> */}
 
+                <li
+                  className={`nav-item dropdown productDropdown ${isDropdownOpen ? "show" : ""}`}
+                  onMouseEnter={() => window.innerWidth > 991 && setIsDropdownOpen(true)}
+                  onMouseLeave={() => window.innerWidth > 991 && setIsDropdownOpen(false)}
+                >
+                  <span
+                    className="nav-link dropdown-toggle"
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                    style={{ cursor: "pointer" }}
+                  >
+                    Products
+                  </span>
+
+                  <ul className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
+                    <div className="ProductGrid">
+
+                      {data?.map((brand) => (
+                        <div className="ProductItem" key={brand.id}>
+
+                          {/* 🔥 Brand Name */}
+                          <h5>{brand?.name}</h5>
+
+                          {/* 🔥 Children (Category) */}
+                          <ul>
+                            {brand?.children?.length > 0 ? (
+                              brand.children.map((child) => (
+                                <li key={child.id}>
+                                  <Link to={`/products/${brand.slug}/${child.slug}`} onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                                    <FaCaretRight /> {child.name}
+                                  </Link>
+                                </li>
+                              ))
+                            ) : (
+                              <li>
+                                <Link to={`/products/${brand.slug}`}   onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                                  View All
+                                </Link>
+                              </li>
+                            )}
+                          </ul>
+
+                        </div>
+                      ))}
+
+                    </div>
+                  </ul>
+                </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/industries">Industries</Link>
                 </li>
@@ -63,10 +128,6 @@ function Header() {
                 <div className="searchBtn" data-bs-toggle="modal" data-bs-target="#searchModal">
                   <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
-                {/* <div className="searchBtn" data-bs-toggle="modal" data-bs-target="#searchModal">
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
-              </div> */}
-
                 <Button className="readmore">
                   Start a quick quote
                 </Button>

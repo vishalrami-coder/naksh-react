@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import '../assets/css/Footer.css'
+import NakshLogo from "../assets/images/naksh-logo.svg";
 
 function Footer() {
   return (
@@ -89,7 +90,7 @@ function Footer() {
 
           <div className="logo">
             <img
-              src="https://nakshtechnology.in/assets/images/naksh-technology-solution-llp-logo.svg"
+              src={NakshLogo}
               alt="logo"
             />
           </div>
