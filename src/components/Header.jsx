@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
 import NakshLogo from "../assets/images/naksh-logo.svg";
@@ -13,7 +13,8 @@ import { FaCaretRight } from "react-icons/fa6";
 function Header() {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
+  const [isSticky, setIsSticky] = useState(false);
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { data, loading } = useSelector((state) => state.menu);
 
@@ -25,9 +26,23 @@ function Header() {
 
 
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <div className="customHeader">
+      <div className={`customHeader ${isSticky ? "stickyHeader" : ""}`}>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container">
 
@@ -69,7 +84,7 @@ function Header() {
                 >
                   <span
                     className="nav-link dropdown-toggle"
-                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                    onClick={() => { setIsDropdownOpen(!isDropdownOpen), navigate(`/products`) }}
                     style={{ cursor: "pointer" }}
                   >
                     Products
@@ -96,7 +111,7 @@ function Header() {
                               ))
                             ) : (
                               <li>
-                                <Link to={`/products/${brand.slug}`}   onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                                <Link to={`/products/${brand.slug}`} onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
                                   View All
                                 </Link>
                               </li>

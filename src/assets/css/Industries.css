@@ -8,6 +8,7 @@
     width: 100%;
     min-height: 357px;
     object-fit: cover;
+    height: 100%;
 }
 
 .industriesGrid .industryCard {
@@ -51,6 +52,7 @@
 
 .industryImg {
     position: relative;
+    height: 100%;
 }
 
 .industryImg:before {

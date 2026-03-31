@@ -14,6 +14,7 @@
     background: #ffff;
     border: 1px solid #4444440f;
     border-radius: 16px;
+    cursor: pointer;
 }
 
 .FeaturedBrandsGridItem img{

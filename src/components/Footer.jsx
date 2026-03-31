@@ -50,22 +50,25 @@ function Footer() {
           <div className="footerLinksItem">
             <h5>Quick Links</h5>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/products">Our Products</Link></li>
-              <li><Link to="/industries">Industries</Link></li>
-              <li><Link to="/blogs">Blogs</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
+              <li><Link className="nav-link" to="/">Home</Link></li>
+              <li><Link className="nav-link" to="/about-us">About Us</Link></li>
+              <li><Link className="nav-link" to="/products">Our Products</Link></li>
+              <li><Link className="nav-link" to="/industries">Industries</Link></li>
+              <li><Link className="nav-link" to="/blogs">Blogs</Link></li>
+              <li><Link className="nav-link" to="/contact-us">Contact Us</Link></li>
             </ul>
           </div>
 
           <div className="footerLinksItem">
             <h5>Featured Brands</h5>
             <ul>
-              <li><a href="#!">SIEMENS</a></li>
-              <li><a href="#!">HUCEEN</a></li>
-              <li><a href="#!">Schneider Electric</a></li>
-              <li><a href="#!">PEPPERL+FUCHS</a></li>
+
+              <li><Link className="nav-link" to="/products/control-panel">Control Panel</Link></li>
+              <li><Link className="nav-link" to="/products/huceen">HUCEEN</Link></li>
+              <li><Link className="nav-link" to="/products/lapp-cables">LAPP Cables</Link></li>
+              <li><Link className="nav-link" to="/products/pepperl-fuchs">Pepperl+Fuchs</Link></li>
+              <li><Link className="nav-link" to="/products/schneider-electric">Schneider Electric</Link></li>
+              <li><Link className="nav-link" to="/products/siemens">Siemens</Link></li>
             </ul>
           </div>
 

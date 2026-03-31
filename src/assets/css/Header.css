@@ -137,7 +137,8 @@
     gap: 10px;
 }
 
-.ProductItem ul a:hover , .ProductItem ul a:hover svg{
+.ProductItem ul a:hover,
+.ProductItem ul a:hover svg {
     color: #00509e;
 }
 
@@ -153,4 +154,14 @@
     margin: 0;
     transition: all .8s;
     display: flex;
+}
+
+
+.stickyHeader {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+    border-bottom: 1px solid #0000000d;
+    z-index: 111;
 }
