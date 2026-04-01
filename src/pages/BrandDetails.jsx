@@ -135,27 +135,27 @@ const BrandDetails = () => {
                     </div>
                 }
 
-                {data?.product_images?.length > 0 && !productSlugs[0] == "huceen" &&
+                {data?.product_images?.length > 0 && productSlugs?.[0] !== "huceen" && (
                     <ProductImageSection
                         smallTitle={''}
                         mainTitle={"Product Image"}
                         images={data?.product_images}
                     />
+                )
                 }
-                {data?.product_specifications?.length > 0 && !productSlugs[0] == "huceen" &&
+                {data?.product_specifications?.length > 0 && productSlugs?.[0] !== "huceen" && (
                     <ProductDetailsWithTabs
                         smallTitle={''}
                         mainTitle={'Technical Clarification'}
                         productSpecifications={data?.product_specifications} />
-                }
-
-                {data?.product_faqs?.length > 0 && !productSlugs[0] == "huceen" &&
+                )}
+                {data?.product_faqs?.length > 0 && productSlugs?.[0] !== "huceen" && (
                     <FAQSection
                         smallTitle={""}
                         mainTitle={"FAQS"}
                         faqData={data?.product_faqs}
                     />
-                }
+                )}
             </div>
         </>
     );

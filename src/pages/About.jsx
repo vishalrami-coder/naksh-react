@@ -89,13 +89,17 @@ function About() {
         BreadcrumbActiveTitle="About Us"
         backgroundImage={`url(${AboutUsBread})`}
       />
-      <AboutSection>
-        <p>
-          Naksh Technology Solution LLP is a premier provider of industrial automation solutions, headquartered in the industrial hub of Ahmedabad, Gujarat. With over a decade of industry expertise, we specialize in the distribution and implementation of high-end automation products, including HMI, PLCs, AC Drives (VFDs), systems, and industrial sensors.</p>
-        <p>
-          As an ISO 9001-certified company, we serve as a vital link in the global supply chain, partnering with world-renowned brands like Siemens, Rexroth, Huceen, Schneider, and Pepperl+Fuchs. Our mission is to empower industries—from pharmaceuticals and textiles to automotive and renewable energy—with scalable, future-ready technologies that drive efficiency and digital transformation
-        </p>
-      </AboutSection>
+
+      <div className="aboutPage">
+        <AboutSection>
+          <p>
+            Naksh Technology Solution LLP is a premier provider of industrial automation solutions, headquartered in the industrial hub of Ahmedabad, Gujarat. With over a decade of industry expertise, we specialize in the distribution and implementation of high-end automation products, including HMI, PLCs, AC Drives (VFDs), systems, and industrial sensors.</p>
+          <p>
+            As an ISO 9001-certified company, we serve as a vital link in the global supply chain, partnering with world-renowned brands like Siemens, Rexroth, Huceen, Schneider, and Pepperl+Fuchs. Our mission is to empower industries—from pharmaceuticals and textiles to automotive and renewable energy—with scalable, future-ready technologies that drive efficiency and digital transformation
+          </p>
+        </AboutSection>
+      </div>
+
       <section
         className="WhyPartner CustomPeding"
         style={{ backgroundImage: "url('https://arkdin-nextjs.vercel.app/assets/img/how_to_work_bg.svg')" }}

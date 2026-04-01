@@ -40,7 +40,7 @@ const ProductDetails = ({ image, smallTitle, mainTitle, description, short_descr
             <div className="container">
                 <div className="row">
                     {/* Left Image */}
-                    <div className="col-sm-12 col-md-5">
+                    <div className="col-sm-12 col-md-6 col-lg-5">
                         {productListing &&
                             <div className="aboutImg">
                                 {Array.isArray(image) && image.length > 1 ? (
@@ -108,7 +108,7 @@ const ProductDetails = ({ image, smallTitle, mainTitle, description, short_descr
                     </div>
 
                     {/* Right Content */}
-                    <div className="col-sm-12 col-md-7">
+                    <div className="col-sm-12 col-md-6 col-lg-7">
                         <div className="aboutContent">
                             <SectionTitle
                                 smallTitle={smallTitle}

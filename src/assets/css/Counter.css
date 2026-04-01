@@ -1,4 +1,3 @@
-
 .DarkAboutCounter {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -72,4 +71,52 @@
 
 .DarkAboutCounterItem:last-child .DarkAboutCounterContent {
     border-right: 1px solid #2222;
+}
+
+
+@media (max-width: 1400px) {
+    .DarkAboutCounterContent h5 {
+        font-size: 14px;
+    }
+
+    .DarkAboutCounterContent {
+        padding: 20px;
+        height: 100%;
+    }
+
+    .DarkAboutCounterNum span,
+    .DarkAboutCounterNum em {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .DarkAboutCounter {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin: 15px;
+
+    }
+
+    .DarkAboutCounterContent {
+        padding: 20px;
+        height: 100%;
+        border: 1px solid #2222 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .DarkAboutCounter {
+        grid-template-columns: 1fr 1fr ;
+        gap: 15px;
+        margin: 15px;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+    .DarkAboutCounter {
+        grid-template-columns: 1fr ;
+    }
 }

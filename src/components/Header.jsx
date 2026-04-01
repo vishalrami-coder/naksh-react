@@ -22,10 +22,6 @@ function Header() {
     dispatch(fetchMenu());
   }, [dispatch]);
 
-  console.log(data, 'data');
-
-
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -40,6 +36,13 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const closeMenu = () => {
+    const navbar = document.getElementById("navbarSupportedContent");
+    if (navbar.classList.contains("show")) {
+      navbar.classList.remove("show");
+    }
+  };
+
   return (
     <>
       <div className={`customHeader ${isSticky ? "stickyHeader" : ""}`}>
@@ -53,34 +56,38 @@ function Header() {
               />
             </Link>
 
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
+
+            <div className="mobileSearch">
+              <div className="searchBtn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              </div>
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <li className="nav-item">
-                  <Link className="nav-link active" to="/">Home</Link>
+                  <Link className="nav-link active" to="/" onClick={closeMenu}>Home</Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/about-us">About Us</Link>
+                  <Link className="nav-link" to="/about-us" onClick={closeMenu}>About Us</Link>
                 </li>
-
-                {/* <li className="nav-item">
-                  <Link className="nav-link" to="/products">Products</Link>
-                </li> */}
 
                 <li
                   className={`nav-item dropdown productDropdown ${isDropdownOpen ? "show" : ""}`}
                   onMouseEnter={() => window.innerWidth > 991 && setIsDropdownOpen(true)}
                   onMouseLeave={() => window.innerWidth > 991 && setIsDropdownOpen(false)}
+                  onClick={closeMenu}
                 >
                   <span
                     className="nav-link dropdown-toggle"
@@ -104,14 +111,20 @@ function Header() {
                             {brand?.children?.length > 0 ? (
                               brand.children.map((child) => (
                                 <li key={child.id}>
-                                  <Link to={`/products/${brand.slug}/${child.slug}`} onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                                  <Link to={`/products/${brand.slug}/${child.slug}`} onClick={() => {
+                                    setIsDropdownOpen(false);
+                                    closeMenu();
+                                  }}>
                                     <FaCaretRight /> {child.name}
                                   </Link>
                                 </li>
                               ))
                             ) : (
                               <li>
-                                <Link to={`/products/${brand.slug}`} onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                                <Link to={`/products/${brand.slug}`} onClick={() => {
+                                  setIsDropdownOpen(false);
+                                  closeMenu();
+                                }}>
                                   View All
                                 </Link>
                               </li>
@@ -125,21 +138,20 @@ function Header() {
                   </ul>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/industries">Industries</Link>
+                  <Link className="nav-link" to="/industries" onClick={closeMenu}>Industries</Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/blogs">Blogs</Link>
+                  <Link className="nav-link" to="/blogs" onClick={closeMenu}>Blogs</Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/contact-us">Contact Us</Link>
+                  <Link className="nav-link" to="/contact-us" onClick={closeMenu}>Contact Us</Link>
                 </li>
 
               </ul>
 
               <div className="rightSideBtn d-flex align-items-center gap-3">
-
                 <div className="searchBtn" data-bs-toggle="modal" data-bs-target="#searchModal">
                   <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>

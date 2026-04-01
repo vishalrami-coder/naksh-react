@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 
 function AboutSection({ children }) {
     return (
-        <section className="aboutUsSec CustomPeding" >
+        <section className="aboutUsSec  CustomPeding" >
             <div className="container">
                 <div className="row">
 

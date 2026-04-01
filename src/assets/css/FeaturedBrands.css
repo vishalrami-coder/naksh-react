@@ -17,9 +17,30 @@
     cursor: pointer;
 }
 
-.FeaturedBrandsGridItem img{
+.FeaturedBrandsGridItem img {
     width: 100%;
     object-fit: scale-down;
     aspect-ratio: 82 / 61;
     border-radius: 16px;
+}
+
+
+@media (max-width: 991px) {
+    .FeaturedBrandsGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .FeaturedBrandsGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .FeaturedBrandsGrid {
+        grid-template-columns: 1fr;
+    }
 }

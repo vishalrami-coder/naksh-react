@@ -143,6 +143,20 @@ function IndustriesServices() {
                         slidesPerView={5}
                         spaceBetween={15}
                         className="gallery-thumbs"
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 2,
+                            },
+                            480: {
+                                slidesPerView: 3,
+                            },
+                            768: {
+                                slidesPerView: 4,
+                            },
+                            1024: {
+                                slidesPerView: 5,
+                            },
+                        }}
                     >
 
                         {industries.map((item, index) => (

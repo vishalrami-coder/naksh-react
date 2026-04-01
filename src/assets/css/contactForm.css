@@ -21,7 +21,7 @@
     letter-spacing: 0.1px;
 } */
 
-.cotactForm .inputIconWrapper{
+.cotactForm .inputIconWrapper {
     padding: 30px 20px !important;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -67,4 +67,129 @@
 
 .textareaInput .inputIconWrapper {
     align-items: self-start;
+}
+
+@media (max-width:991px) {
+    .cotactForm {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width:767px) {
+    .cotactForm {
+        padding-left: 0px;
+    }
+
+    .cotactForm .secTitle {
+        margin: 0px;
+    }
+
+    .inputWrapper {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+}
+
+@media (max-width: 567px) {
+
+    .icon_box_05.ib5_left i {
+        margin: auto 0;
+        width: fit-content;
+        height: auto;
+        border: 0px;
+        position: relative;
+        font-size: 22px;
+    }
+
+    .icon_box_05.ib5_left .ib5_inner {
+        padding: 0px !important;
+        border: 0px;
+    }
+
+    .icon_box_05.ib5_left {
+        padding: 15px;
+        border: 1px solid #ecebff;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0px;
+    }
+
+    .icon_box_05.ib5_left .ib5_inner p br {
+        display: none;
+    }
+
+    .icon_box_05.ib5_left .ib5_inner h3 {
+        font-size: 16px;
+    }
+
+    .contactInfoWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-bottom: 40px;
+    }
+
+    .CustomPeding {
+        padding: 40px 0px !important;
+    }
+
+    .secTitle h2 {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .cotactForm .inputIconWrapper {
+        padding: 20px !important;
+        border: 1px solid #ecebffc7;
+    }
+
+    .cotactForm .secTitle {
+        margin-bottom: 20px;
+    }
+
+    .cotactForm form,
+    .inputWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cotactForm .readmore {
+        margin: 0px;
+    }
+
+    .mapIframe iframe {
+        height: 250px;
+    }
+
+    .Cta-content h1 {
+        font-size: 18px;
+    }
+
+    .Cta-content {
+        gap: 10px;
+        text-align: center;
+    }
+
+    .Cta-buttons {
+        flex-direction: column;
+    }
+
+    .Cta-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .legal-banner::after {
+        display: none;
+    }
+
+    .cs_page_heading {
+        height: 200px;
+    }
+
+    .cs_page_heading h1 {
+        font-size: 22px;
+    }
 }

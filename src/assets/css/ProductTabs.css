@@ -40,3 +40,18 @@
     grid-template-columns: 1fr;
     gap: 35px;
 }
+
+@media (max-width: 767px) {
+    .MainPageTab button {
+        padding: 10px 20px !important;
+        font-size: 14px;
+        background-color: #fff;
+    }
+
+    .MainPageTab {
+        border-radius: 0px;
+        background: transparent;
+        border: 0px;
+        gap: 10px;
+    }
+}

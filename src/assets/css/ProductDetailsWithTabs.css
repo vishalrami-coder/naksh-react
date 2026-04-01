@@ -29,6 +29,7 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+
 .TechnicalDetailsContent ul li {
     display: flex;
     align-items: center;
@@ -91,4 +92,21 @@
     color: #444;
     font-weight: 400;
     font-family: 'Roboto Flex';
+}
+
+@media (max-width: 767px) {
+    .TechnicalDetailsContentWrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .TechnicalDetailsContentWrapper .TechImg {
+        max-width: 150px;
+        margin-right: auto;
+    }
+
+    .TechnicalDetailsContent ul li h4, .TechnicalDetailsContent ul li p {
+        font-size: 13px;
+    }
 }

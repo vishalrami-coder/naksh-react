@@ -51,3 +51,11 @@
     color: #444;
     font-weight: 400;
 }
+
+@media (max-width: 767px) {
+   .FaqGrid .accordion-item .accordion-button, .FaqGrid .accordion-item .accordion-body, .FaqGrid .accordion-item .accordion-button.collapsed{
+    font-size: 14px;
+    line-height: 28px;
+    padding: 15px;
+   } 
+}

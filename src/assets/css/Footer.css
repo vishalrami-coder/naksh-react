@@ -232,3 +232,64 @@ form.subscribe-form button {
 .socialMedia a:hover {
     color: #003d77;
 }
+
+
+@media (max-width: 1200px) {
+    .Cta-content h1 {
+        font-size: 30px;
+    }
+
+    .Cta-content p,
+    .footerLinksContent p,
+    .footerLinksItem ul li a {
+        font-size: 14px;
+    }
+
+    .footerLinksItem h5 {
+        font-size: 16px;
+    }
+    .footerLinksWrapper{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .footerLinksWrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .footerLinksItem h5 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footerLinksWrapper {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .footerLinksItem {
+        padding: 15px 0px;
+        border-bottom: 1px solid #00000014;
+    }
+
+    .footerLinksItem:last-child {
+        padding-bottom: 0px;
+        border-bottom: 0px;
+    }
+
+    .footerLinksWrapper {
+        padding: 30px 0px;
+    }
+
+    .legal-banner {
+        padding: 25px;
+    }
+    .legal-banner::after{
+        bottom: 0px;
+        right: 0px;
+    }
+}

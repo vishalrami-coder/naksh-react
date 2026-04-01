@@ -56,14 +56,14 @@ const Categories = () => {
                     <div className="productDetails CustomPeding borderBottom">
                         <div className="container">
                             <div className="row">
-                                <div className="col-sm-12 col-md-5">
+                                <div className="col-sm-12 col-md-6 col-lg-5">
                                     <div className="aboutImg p-0">
                                         <ShimmerText className="aboutImgShimmer-box" line={1} />
                                     </div>
                                 </div>
 
                                 {/* Right Content */}
-                                <div className="col-sm-12 col-md-7">
+                                <div className="col-sm-12 col-md-6 col-lg-7">
                                     <div className="aboutContent">
                                         <div class="secTitle">
                                             <ShimmerText className="spanShimmer-box" line={1} />

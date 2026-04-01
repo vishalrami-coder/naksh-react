@@ -207,3 +207,43 @@
 .BlogDetailsCategoriesListing ul li:hover {
     background: #f4f4f4;
 }
+
+
+.BlogDetailsContent .blog__next__prev ul {
+    display: flex;
+    gap: 10px !important;
+}
+
+.BlogDetailsContent .blog__next__prev ul p {
+    line-height: 28px;
+}
+
+@media (max-width: 1200px) {
+    .BlogDetailsGrid {
+        gap: 40px;
+    }
+
+    .blogDetailsTitle {
+        font-size: 18px;
+    }
+
+    .BlogDetailsContent .blog_detail__left>div p,
+    .BlogDetailsContent .blog_detail__left>div ul li {
+        font-size: 14px;
+    }
+
+    .BlogDetailsCategoriesItem h2 {
+        font-size: 18px;
+    }
+
+    .BlogDetailsCategoriesListing ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .BlogDetailsGrid{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

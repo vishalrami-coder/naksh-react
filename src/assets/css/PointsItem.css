@@ -74,3 +74,25 @@
     border-top: 2.5px solid #00509e;
     border-right: 2.5px solid #00509e;
 }
+
+@media (max-width: 1100px) {
+    .pointsGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pointsGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .pointsGrid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}

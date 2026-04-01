@@ -63,3 +63,25 @@
     position: absolute;
     z-index: 1;
 }
+
+@media (max-width: 1100px) {
+    .industriesGrid{
+        gap: 15px;
+    }
+    .industryImg img{
+        min-height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .industriesGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 567px) {
+    .industriesGrid{
+        grid-template-columns: 1fr ;
+    }
+}

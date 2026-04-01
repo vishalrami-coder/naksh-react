@@ -24,6 +24,7 @@
     text-align: left;
     line-height: 40px;
 }
+
 .secTitle p {
     font-size: 16px;
     margin: 0px;
@@ -33,6 +34,29 @@
     font-family: 'Roboto Flex';
 }
 
-.secTitle span:empty, .secTitle p:empty, .secTitle h2:empty{
+.secTitle span:empty,
+.secTitle p:empty,
+.secTitle h2:empty {
     display: none;
+}
+
+
+
+@media (max-width: 1200px) {
+    .secTitle h2 {
+        font-size: 22px !important;
+        line-height: normal !important;
+    }
+
+    .secTitle p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 567px) {
+    .secTitle h2 {
+        font-size: 16px !important;
+    }
+
 }

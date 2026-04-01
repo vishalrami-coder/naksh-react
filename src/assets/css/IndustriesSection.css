@@ -1,5 +1,3 @@
-
-
 .gallery {
     width: 100%;
     max-width: 100%;
@@ -242,4 +240,57 @@ img.serviceCardBgImg2 {
 
 .serviceDetails ul li svg {
     color: #00509e;
+}
+
+@media (max-width: 991px) {
+    .serviceCardWrapper .service_cardT {
+        font-size: 14px;
+    }
+
+    .serviceCardImg img {
+        width: 35px !important;
+    }
+
+    .serviceDetails h2 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    .serviceDetails {
+        padding: 0px 15px;
+    }
+
+    .serviceDetails ul li {
+        font-size: 14px;
+    }
+
+    .serviceDetailsCard {
+        grid-template-columns: 1fr 40%;
+        display: grid;
+    }
+}
+
+@media (max-width: 767px) {
+    .serviceDetailsCard {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .gallery-slider .swiper-slide img,
+    .serviceDetailsThumb {
+        width: 100%;
+    }
+
+    .serviceDetails {
+        padding: 25px;
+    }
+
+    .gallery {
+        gap: 0px;
+    }
+    .serviceDetails ul{
+        grid-template-columns: 1fr;
+    }
 }

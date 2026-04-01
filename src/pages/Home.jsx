@@ -59,34 +59,36 @@ function Home() {
           brands={products}
         />
       )}
-      <AboutSection>
-        <p>
-          NAKSH TECHNOLOGY SOLUTIONS LLP, located in Ahmedabad, India, is a top supplier of Siemens automation products. We offer a wide range of solutions, including PLCs, AC Drives, Servo Systems, HMIs, SCADA systems, and IPCs. Our products boost efficiency and productivity while providing tailored solutions for maximum performance and reliability.
-        </p>
+      <div className="HomeAboutUs">
+        <AboutSection>
+          <p>
+            NAKSH TECHNOLOGY SOLUTIONS LLP, located in Ahmedabad, India, is a top supplier of Siemens automation products. We offer a wide range of solutions, including PLCs, AC Drives, Servo Systems, HMIs, SCADA systems, and IPCs. Our products boost efficiency and productivity while providing tailored solutions for maximum performance and reliability.
+          </p>
 
-        <div className="extraPoints">
-          <ul>
-            <li>
-              <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" /> Ventilation System Maintenance
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" /> Indoor Air Quality Testing
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" /> Cool Craft Custom Solutions
-            </li>
-          </ul>
+          <div className="extraPoints">
+            <ul>
+              <li>
+                <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" /> Ventilation System Maintenance
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" /> Indoor Air Quality Testing
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" /> Cool Craft Custom Solutions
+              </li>
+            </ul>
 
-          <div className="experience">
-            <h3>Experience</h3>
-            <h2>25+</h2>
+            <div className="experience">
+              <h3>Experience</h3>
+              <h2>25+</h2>
+            </div>
+
           </div>
-
-        </div>
-        <Button className="readmore">
-          Read More <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" />
-        </Button>
-      </AboutSection>
+          <Button className="readmore">
+            Read More <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" />
+          </Button>
+        </AboutSection>
+      </div>
       <Counter />
       <IndustriesSection />
     </>

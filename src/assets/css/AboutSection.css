@@ -108,3 +108,59 @@
     object-fit: contain;
     padding: 40px;
 }
+
+.HomeAboutUs .aboutImg img {
+    padding: 0px;
+    min-height: unset;
+    max-height: unset;
+}
+
+@media (max-width: 991px) {
+    .aboutContent {
+        padding: 0px;
+    }
+
+    .aboutPage .aboutImg img {
+        padding: 0px;
+        min-height: auto;
+        max-height: unset;
+    }
+
+    .secTitle h2 {
+        font-size: 22px !important;
+        line-height: normal !important;
+    }
+
+    .desc p {
+        font-size: 14px;
+    }
+
+    .extraPoints ul li {
+        font-size: 14px;
+    }
+
+    .experience h2 {
+        font-size: 50px;
+    }
+
+    .experience h3 {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .experience {
+        writing-mode: unset;
+        transform: unset;
+        padding-right: unset;
+        padding: 0px !important;
+        border: 0px !important;
+    }
+
+    .extraPoints {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
