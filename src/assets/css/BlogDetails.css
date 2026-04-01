@@ -7,7 +7,7 @@
 }
 
 .BlogDetailsContent .blog_detail__left>div p,
-.BlogDetailsContent .blog_detail__left>div ul li {
+.BlogDetailsContent .blog_detail__left>div ul li, .BlogDetailsContent .blog_detail__left>div span {
     color: #444;
     margin: 0;
     padding: 0;
@@ -18,7 +18,9 @@
 }
 
 .BlogDetailsContent .blog_detail__left>div h2,
-.BlogDetailsContent .blog_detail__left>div h3 {
+.BlogDetailsContent .blog_detail__left>div h3,
+.BlogDetailsContent .blog_detail__left>div h5,
+.BlogDetailsContent .blog_detail__left>div h4  {
     color: #000;
     text-align: left;
     margin: 0;
@@ -45,6 +47,7 @@
 .BlogDetailsItem img {
     width: 100%;
     border-radius: 10px;
+    height: auto;
 }
 
 .blogDetailsTitle {
@@ -57,7 +60,7 @@
     font-weight: 700 !important;
 }
 
-.BlogDetailsContent .blog_detail__left>div p a {
+.BlogDetailsContent .blog_detail__left>div p a, .BlogDetailsContent .blog_detail__left>div a, .BlogDetailsContent .blog_detail__left>div a span {
     text-decoration: unset;
     color: #00509e;
 }
@@ -96,7 +99,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #fff;
+    color: #fff !important;
     background: #00509e;
     border-radius: 10px;
     font-family: Roboto Flex;
@@ -242,8 +245,19 @@
 }
 
 @media (max-width: 767px) {
-    .BlogDetailsGrid{
+    .BlogDetailsGrid {
         display: flex;
         flex-direction: column-reverse;
     }
+}
+
+span[data-ccp-props] {
+  display: none !important;
+}
+.BlogDetailsContent .blog_detail__left>div br {
+    display: none;
+}
+
+.BlogDetailsContent .blog_detail__left>div.blog__next__prev {
+    display: none;
 }

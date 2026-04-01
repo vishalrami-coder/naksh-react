@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter basename="/nakshNewPage">
       <Provider store={store}>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <App />
       </Provider>
     </BrowserRouter>
