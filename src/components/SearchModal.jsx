@@ -10,23 +10,10 @@ import noDataFoundImg from '../assets/images/noDataFound.jpg'
 
 const SearchModal = () => {
     const [search, setSearch] = useState("");
-    console.log(search, 'search');
     const [hoverIndex, setHoverIndex] = useState(null);
     const dispatch = useDispatch();
     const { data, loading } = useSelector((state) => state.search);
     const navigate = useNavigate();
-
-    // useEffect(() => {
-    //     const delay = setTimeout(() => {
-    //         if (search.length >= 2) {
-    //             dispatch(fetchSearch(search));
-    //         } else {
-    //             dispatch(clearSearch());
-    //         }
-    //     }, 400);
-
-    //     return () => clearTimeout(delay);
-    // }, [search]);
 
     useEffect(() => {
         const delay = setTimeout(() => {

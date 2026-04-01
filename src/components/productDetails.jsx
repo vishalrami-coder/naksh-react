@@ -6,10 +6,6 @@ import DOMPurify from "dompurify";
 
 
 const ProductDetails = ({ image, smallTitle, mainTitle, description, short_description, productListing, BrandDetails, ProductNullImg, productSlugs, huceenImage }) => {
-
-    console.log(huceenImage, 'huceenImage');
-
-
     const cleanHTML = (html) => {
         if (!html) return "";
 

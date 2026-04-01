@@ -16,9 +16,6 @@ const CategoryPage = () => {
 
     const { categoryBlogs, loadingCategoryBlogs } = useSelector((state) => state.blog);
 
-    console.log(categoryBlogs, 'blogsCategories');
-
-
     useEffect(() => {
         dispatch(fetchCategoriesListing(slug));
     }, [slug, dispatch]);
