@@ -65,7 +65,7 @@ const Categories = () => {
                                 {/* Right Content */}
                                 <div className="col-sm-12 col-md-6 col-lg-7">
                                     <div className="aboutContent">
-                                        <div class="secTitle">
+                                        <div className="secTitle">
                                             <ShimmerText className="spanShimmer-box" line={1} />
                                             <ShimmerText className="h2shimmer-box" line={1} />
                                         </div>
@@ -106,7 +106,7 @@ const Categories = () => {
                                 {Array(4)
                                     .fill("")
                                     .map((_, index) => (
-                                        <div className="productItem">
+                                        <div className="productItem" key={index}>
                                             <div className="productImage p-0">
                                                 <ShimmerText className="aboutImgShimmer-box" line={1} />
                                             </div>

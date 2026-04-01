@@ -35,7 +35,7 @@ function Home() {
       {loading && (
         <section className="FeaturedBrands bgGrey CustomPeding">
           <div className="container">
-            <div class="secTitle">
+            <div className="secTitle">
               <ShimmerText className="h2shimmer-box" line={1} />
             </div>
             <div className="FeaturedBrandsGrid">

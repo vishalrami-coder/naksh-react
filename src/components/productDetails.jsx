@@ -3,9 +3,13 @@ import SectionTitle from "./SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import DOMPurify from "dompurify";
+import nakshplaceholder from "../assets/images/nakshplaceholder_new.jpg";
 
 
 const ProductDetails = ({ image, smallTitle, mainTitle, description, short_description, productListing, BrandDetails, ProductNullImg, productSlugs, huceenImage }) => {
+
+    console.log(huceenImage, 'image==>');
+
     const cleanHTML = (html) => {
         if (!html) return "";
 
@@ -61,7 +65,7 @@ const ProductDetails = ({ image, smallTitle, mainTitle, description, short_descr
                                     <img src={image[0]} alt="single" />
 
                                 ) : (
-                                    <p>No images available</p>
+                                    <img src={huceenImage?.parent?.image_url} alt="singleImg" />
                                 )}
                             </div>
                         }
