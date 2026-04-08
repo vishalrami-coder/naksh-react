@@ -6,6 +6,15 @@ import SectionTitle from "../components/SectionTitle";
 import TeamMemberCard from "../components/TeamMemberCard";
 import AboutUsBread from "../assets/images/breadcum/about-us.webp";
 
+import Quotations from "../assets/images/naksh-why-icons/quotations.webp";
+import Availability from "../assets/images/naksh-why-icons/best-price.webp";
+import TechnicalSupport from "../assets/images/naksh-why-icons/technical-support.webp";
+import DedicatedCustomerService from "../assets/images/naksh-why-icons/customer-service.webp";
+import Excellent from "../assets/images/naksh-why-icons/after-sales-service.webp";
+import Warranty from "../assets/images/naksh-why-icons/warranty.webp";
+
+
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 // Images Import
@@ -16,37 +25,37 @@ function About() {
     {
       title: "Fast and Reliable Quotations",
       desc: "We respect your time. Our streamlined process ensures you receive accurate and competitive quotes promptly to keep your projects on schedule.",
-      icon: "https://arkdin-nextjs.vercel.app/assets/img/icons/how_to_work_icon_1.svg",
+      icon: Quotations,
       type: 1,
     },
     {
       title: "Best Price Availability",
       desc: " Leveraging our position as a leading wholesale trader and stockist, we provide premium automation components at the most cost-effective market rates.",
-      icon: "https://arkdin-nextjs.vercel.app/assets/img/icons/how_to_work_icon_1.svg",
+      icon: Availability,
       type: 2,
     },
     {
       title: "Strong Technical Support",
       desc: "Our team of experienced engineers provides deep technical insights, helping you select and integrate the right systems for your specific industrial needs.",
-      icon: "https://arkdin-nextjs.vercel.app/assets/img/icons/how_to_work_icon_1.svg",
+      icon: TechnicalSupport,
       type: 1,
     },
     {
       title: "Dedicated Customer Service",
       desc: "From initial inquiry to final implementation, our responsive support team is available to assist you at every step of your automation journey.",
-      icon: "https://arkdin-nextjs.vercel.app/assets/img/icons/how_to_work_icon_1.svg",
+      icon: DedicatedCustomerService,
       type: 1,
     },
     {
       title: "Excellent After-Sales Service",
       desc: "Our relationship with you doesn't end at delivery. We provide comprehensive post-purchase support to ensure your systems operate at peak performance.",
-      icon: "https://arkdin-nextjs.vercel.app/assets/img/icons/how_to_work_icon_1.svg",
+      icon: Excellent,
       type: 2,
     },
     {
       title: "Warranty and Guarantee",
       desc: "Quality is our priority. All our products and solutions come with industry-standard warranties, giving you complete peace of mind and long-term security.",
-      icon: "https://arkdin-nextjs.vercel.app/assets/img/icons/how_to_work_icon_1.svg",
+      icon: Warranty,
       type: 1,
     },
   ];
@@ -134,7 +143,7 @@ function About() {
             spaceBetween={30}
             slidesPerView={4}
             loop={true}
-            autoplay={{ delay: 3000 }}
+            // autoplay={{ delay: 3000 }}
             breakpoints={{
               320: {
                 slidesPerView: 1,

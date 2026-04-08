@@ -115,6 +115,13 @@
     max-height: unset;
 }
 
+
+   .aboutPage .aboutImg img {
+        padding: 0px;
+        min-height: auto;
+        max-height: unset;
+    }
+
 @media (max-width: 991px) {
     .aboutContent {
         padding: 0px;

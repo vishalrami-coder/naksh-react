@@ -23,6 +23,7 @@
 
 .teamCard .cs_team_member_shape svg {
     width: 100%;
+    transform: scale(1.2) translate(0px, 30px);
 }
 
 .teamCard .teamCardProfileImg {
