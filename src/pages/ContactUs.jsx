@@ -21,7 +21,7 @@ function ContactUs() {
       title: "Office Location",
       content: (
         <>
-          133-134, 1st Floor, Kalp Business Park, Near Kia Showroom, Opp. H.P. Petrol Pump, S. P. Ring Road, Nikol-Kathwada, <br /> Ahmedabad, Gujarat 382415
+          A 133-134, 1st floor, Kalp Business Park, Near Kia Show Room, Opp. H.P. Petrol Pump, S. P. Ring Road, Nikol- Kathwada, Ahmedabad, Gujarat 382350
         </>
       ),
     },

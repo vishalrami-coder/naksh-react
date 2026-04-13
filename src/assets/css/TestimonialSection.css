@@ -1,0 +1,124 @@
+.clientLogoWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 15px 45px 15px 0px;
+}
+
+.clientLogoWrapper .clientsItem img {
+    width: 100%;
+    margin: auto;
+    object-fit: scale-down;
+    max-height: 80px;
+    filter: grayscale(0);
+}
+
+.clientsItem {
+    background: #ffffff;
+    transition: all .4s;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    min-height: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.secTitle h2 {
+    text-align: left;
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Roboto Flex";
+    color: #fff;
+}
+
+.TestimonialWrapper {
+    padding: 0px 50px;
+    border-left: 1px solid #171a1c;
+}
+
+.TestimonialWrapper .profileImg img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+.profileWrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profileContent h5 {
+    font-size: 16px;
+    color: #fff;
+    margin: 0px;
+}
+
+.profileContent h6 {
+    font-size: 14px;
+    color: #919191;
+    margin: 0px;
+    font-weight: 600;
+    font-family: 'Roboto Flex';
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #8686861a;
+}
+
+.contentWrapper .content p {
+    font-size: 16px;
+    margin: 0px;
+    line-height: 32px;
+    color: #ffffff94;
+    font-weight: 400;
+    font-family: 'Roboto Flex';
+    min-height: 96px;
+}
+
+.contentWrapper .logo img {
+    max-width: 50px;
+    min-height: 50px;
+    object-fit: scale-down;
+    filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(23%) hue-rotate(342deg) brightness(107%) contrast(106%);
+}
+
+.TestimonialsItem {
+    padding: 32px;
+    background: #18191a;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 12px;
+    border: 1px solid #242425;
+}
+
+.profileImg {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    background: #030405 !important;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImg span {
+    font-size: 20px;
+    font-family: 'Roboto Flex';
+    color: #fff;
+    font-weight: 600;
+}

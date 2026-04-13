@@ -18,8 +18,9 @@ const slides = [
         subtitle: "TO NAKSH TECHNOLOGY",
         desc: (
             <>
-                Delivering reliable automation systems and world-class <br />
-                industrial products for businesses across India.
+                An independent company with global market leadership in B2B Distribution of<br /> 
+                Automation Products and Drives, solutions, and related services.
+
             </>
         ),
         btn: "Read More",
@@ -54,7 +55,7 @@ const slides = [
     {
         img: banner4,
         title: "HUCEEN AUTOMATION",
-        subtitle: "SOLUTIONS - (UP TO 40% OFF)",
+        subtitle: "SOLUTIONS - (UP TO 40% To 60% OFF)",
         desc: (
             <>
                 As a prioritized HUCEEN partner, we offer advanced motion control, <br />

@@ -18,17 +18,16 @@ function Footer() {
         {/* CTA Section */}
         <div className="legal-banner">
           <div className="Cta-content">
-            <h1>Contact Us for Legal Assistance</h1>
-            <p>Experienced lawyers ready to fight for your rights</p>
+            <h1>Looking for reliable Automation Solutions?</h1>
 
             <div className="Cta-buttons">
               <Link to="/areas-of-law" className="Cta-btn">
-                Our areas of Law
+                Get in touch
               </Link>
 
-              <Link to="/success" className="Cta-btn">
+              {/* <Link to="/success" className="Cta-btn">
                 New successes ↗
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -40,9 +39,7 @@ function Footer() {
             <h5>Address</h5>
             <div className="footerLinksContent">
               <p>
-                201, 308 & 309, Rashmi Growth Hub, Opposite Vijay Sales Showroom,
-                Near Hotel Sai Palace, S.P. Ring Road, Odhav, Ahmedabad,
-                Gujarat 382415
+                A 133-134, 1st floor, Kalp Business Park, Near Kia Show Room, Opp. H.P. Petrol Pump, S. P. Ring Road, Nikol- Kathwada, Ahmedabad, Gujarat 382350
               </p>
             </div>
           </div>

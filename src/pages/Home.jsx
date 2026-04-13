@@ -5,6 +5,7 @@ import Counter from "../components/Counter";
 import FeaturedBrands from "../components/FeaturedBrands";
 import HeroSlider from "../components/HeroSlider";
 import IndustriesSection from "../components/IndustriesSection";
+import TestimonialSection from "../components/TestimonialSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "../components/Button";
@@ -80,7 +81,7 @@ function Home() {
 
             <div className="experience">
               <h3>Experience</h3>
-              <h2>25+</h2>
+              <h2>7+</h2>
             </div>
 
           </div>
@@ -91,6 +92,7 @@ function Home() {
       </div>
       <Counter />
       <IndustriesSection />
+      <TestimonialSection />
     </>
   );
 }
