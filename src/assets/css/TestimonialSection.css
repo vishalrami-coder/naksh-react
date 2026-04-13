@@ -1,8 +1,9 @@
 .clientLogoWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 15px 45px 15px 0px;
+    gap: 15px;
+    padding-right: 38px;
+    height: 100%;
 }
 
 .clientLogoWrapper .clientsItem img {
@@ -10,7 +11,7 @@
     margin: auto;
     object-fit: scale-down;
     max-height: 80px;
-    filter: grayscale(0);
+    /* filter: grayscale(0); */
 }
 
 .clientsItem {
@@ -20,9 +21,16 @@
     align-items: center;
     padding: 20px;
     min-height: 150px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #0000000f;
     border-radius: 12px;
+    filter: grayscale(1);
 }
+
+.clientsItem:hover {
+    filter: grayscale(0);
+    border: 1px solid #00509e4f;
+}
+
 
 .secTitle h2 {
     text-align: left;
@@ -34,8 +42,8 @@
 }
 
 .TestimonialWrapper {
-    padding: 0px 50px;
-    border-left: 1px solid #171a1c;
+    padding-left: 50px;
+    border-left: 1px solid #c7c7c740;
 }
 
 .TestimonialWrapper .profileImg img {
@@ -52,13 +60,13 @@
 
 .profileContent h5 {
     font-size: 16px;
-    color: #fff;
+    color: #000000;
     margin: 0px;
 }
 
 .profileContent h6 {
     font-size: 14px;
-    color: #919191;
+    color: #444444ab;
     margin: 0px;
     font-weight: 600;
     font-family: 'Roboto Flex';
@@ -73,43 +81,40 @@
 .contentWrapper {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding-bottom: 20px;
+    gap: 25px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #8686861a;
 }
 
 .contentWrapper .content p {
-    font-size: 16px;
+    font-size: 15px;
     margin: 0px;
-    line-height: 32px;
-    color: #ffffff94;
+    line-height: 30px;
+    color: #444;
     font-weight: 400;
     font-family: 'Roboto Flex';
-    min-height: 96px;
+    padding: 0px;
 }
 
 .contentWrapper .logo img {
-    max-width: 50px;
-    min-height: 50px;
-    object-fit: scale-down;
-    filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(23%) hue-rotate(342deg) brightness(107%) contrast(106%);
+    max-width: 150px;
+
 }
 
 .TestimonialsItem {
     padding: 32px;
-    background: #18191a;
+    background: #fff;
     display: flex;
     flex-direction: column;
     gap: 20px;
     border-radius: 12px;
-    border: 1px solid #242425;
+    border: 1px solid #f0f0f0;
 }
 
 .profileImg {
     width: 70px;
     height: 70px;
-    display: flex;
-    background: #030405 !important;
+    background: #00509e !important;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -121,4 +126,43 @@
     font-family: 'Roboto Flex';
     color: #fff;
     font-weight: 600;
+}
+
+.clientSec {
+    border-top: 1px solid #f4f4f4;
+}
+
+.TestimonialWrapper .swiper-button-prev {
+    position: absolute;
+    top: 34px;
+    right: 84px;
+    left: unset;
+    margin: 0px;
+    padding: 10px;
+    background: #dce6f0;
+    border-radius: 4px;
+    border: 1px solid #004f9e25;
+}
+
+.TestimonialWrapper .swiper-button-prev svg {
+    color: #00509e;
+    width: 8px;
+}
+
+
+.TestimonialWrapper .swiper-button-next {
+    position: absolute;
+    top: 34px;
+    right: 32px;
+    left: unset;
+    margin: 0px;
+    padding: 10px;
+    background: #dce6f0;
+    border-radius: 4px;
+    border: 1px solid #004f9e25;
+}
+
+.TestimonialWrapper .swiper-button-next svg {
+    color: #00509e;
+    width: 8px;
 }
