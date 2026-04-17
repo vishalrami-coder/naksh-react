@@ -124,7 +124,7 @@ const BrandDetails = () => {
                     </div>
                 }
 
-                {productSlugs[0] == "huceen" && data?.full_description &&
+                {(productSlugs[0] == "huceen" || productSlugs[0] == "bosch-rexroth") && data?.full_description &&
                     <div className="newProDetailTableItemMain CustomPeding">
                         <div
                             className="container"

@@ -115,7 +115,7 @@ const ProductDetails = ({ image, smallTitle, mainTitle, description, short_descr
                                 mainTitle={mainTitle}
                                 className="mb-0"
                             />
-                            {productSlugs == "huceen" ?
+                            {(productSlugs == "huceen" || productSlugs == "bosch-rexroth" ) ?
                                 <div className="desc huceenDetails">
                                     {short_description && (
                                         <p
