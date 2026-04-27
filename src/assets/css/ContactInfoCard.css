@@ -42,9 +42,9 @@
 }
 
 .icon_box_05.ib5_left .ib5_inner h3 {
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Roboto Flex';
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
     color: #00509e;
     line-height: normal;
     margin: 0px;
@@ -54,10 +54,10 @@
     margin: 0px;
     font-size: 14px;
     margin: 0px;
-    line-height: 24px;
-    color: #222;
+    line-height: 28px;
+    color: #444;
     font-weight: 500;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
 }
 
 

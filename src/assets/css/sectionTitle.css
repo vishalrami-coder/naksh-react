@@ -10,28 +10,28 @@
     margin: 0px;
     color: #000;
     font-weight: 600;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     padding: 0px;
     text-transform: uppercase;
 }
 
 .secTitle h2 {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: 'Roboto Flex';
-    color: #00509e;
+    font-size: 22px;
     margin: 0px;
     text-align: left;
     line-height: 40px;
+    color: #004e9a;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
 }
 
 .secTitle p {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
     line-height: 32px;
     color: #222;
     font-weight: 400;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
 }
 
 .secTitle span:empty,

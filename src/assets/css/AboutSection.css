@@ -17,13 +17,12 @@
 }
 
 .desc p {
+    font-size: 14px;
     margin: 0px;
-    font-size: 15px;
-    margin: 0px;
-    line-height: 30px;
+    line-height: 32px;
     color: #444;
     font-weight: 400;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     padding: 0px;
 }
 
@@ -53,11 +52,11 @@
 }
 
 .extraPoints ul li {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0px;
-    color: #788094;
-    font-weight: 600;
-    font-family: 'Roboto Flex';
+    color: #444;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
     padding: 0px;
     display: flex;
     align-items: center;
@@ -80,11 +79,10 @@
 
 .experience h3 {
     margin: 0px;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.417em;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
-    letter-spacing: 0.5px;
 }
 
 .experience h2 {
@@ -93,7 +91,8 @@
     -webkit-text-stroke: 2px #00509e;
     color: #00509e00;
     margin: 0px;
-    font-family: 'League Spartan';
+    font-family: 'Inter';
+    font-weight: 900;
 }
 
 .extraPoints ul li i {
@@ -116,11 +115,11 @@
 }
 
 
-   .aboutPage .aboutImg img {
-        padding: 0px;
-        min-height: auto;
-        max-height: unset;
-    }
+.aboutPage .aboutImg img {
+    padding: 0px;
+    min-height: auto;
+    max-height: unset;
+}
 
 @media (max-width: 991px) {
     .aboutContent {

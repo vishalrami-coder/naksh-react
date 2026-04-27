@@ -35,10 +35,6 @@
 .secTitle h2 {
     text-align: left;
     margin: 0px;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: "Roboto Flex";
-    color: #fff;
 }
 
 .TestimonialWrapper {
@@ -69,7 +65,7 @@
     color: #444444ab;
     margin: 0px;
     font-weight: 600;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
 }
 
 .profileContent {
@@ -92,7 +88,7 @@
     line-height: 30px;
     color: #444;
     font-weight: 400;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     padding: 0px;
 }
 
@@ -123,7 +119,7 @@
 
 .profileImg span {
     font-size: 20px;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     color: #fff;
     font-weight: 600;
 }

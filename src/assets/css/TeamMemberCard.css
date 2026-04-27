@@ -59,7 +59,7 @@
 .cs_team_member_info h3 {
     font-size: 18px;
     font-weight: 700;
-    font-family: "Roboto Flex";
+    font-family: "Poppins", sans-serif;
     color: #00509e;
     margin: 0px;
     text-align: center;
@@ -72,7 +72,7 @@
     line-height: normal;
     color: #000;
     font-weight: 500;
-    font-family: 'Roboto Flex';
+  font-family: "Poppins", sans-serif;
     text-align: center;
     transition: 0.8s all;
 }

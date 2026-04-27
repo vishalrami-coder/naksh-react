@@ -49,13 +49,13 @@
 .TechnicalDetailsContent ul li h4 {
     font-size: 14px;
     font-weight: 500;
-    font-family: "Roboto Flex";
+    font-family: "Poppins", sans-serif;
     color: #000;
 }
 
 .TechnicalDetailsContent ul li p {
     font-size: 14px;
-    font-family: "Roboto Flex";
+    font-family: "Poppins", sans-serif;
     margin: 0px;
     color: #000;
     font-weight: 500;
@@ -75,7 +75,7 @@
 .TechnicalDetailsContent .aboutSmallTitle h2 {
     font-size: 18px;
     color: #000;
-    font-family: "Roboto Flex";
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     transition: 0.8s all;
     margin: 0px;
@@ -91,7 +91,7 @@
     line-height: 32px;
     color: #444;
     font-weight: 400;
-    font-family: 'Roboto Flex';
+  font-family: "Poppins", sans-serif;
 }
 
 @media (max-width: 767px) {

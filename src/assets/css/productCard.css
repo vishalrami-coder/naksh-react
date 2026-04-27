@@ -27,7 +27,7 @@
     background: #00000087;
     border-radius: 6px;
     color: #ffff;
-    font-family: "Roboto Flex";
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 13px;
     backdrop-filter: blur(15px);
@@ -43,7 +43,7 @@
     margin: 0px;
     font-size: 14px;
     color: #000;
-    font-family: 'Roboto Flex';
+  font-family: "Poppins", sans-serif;
     font-weight: 600;
     transition: 0.8s all;
 }

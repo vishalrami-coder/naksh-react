@@ -29,6 +29,7 @@ import service1Bg from "../assets/images/service_shape_1.svg";
 
 import '../assets/css/IndustriesSection.css'
 import SectionTitle from "./SectionTitle";
+import { Link } from "react-router-dom";
 
 function IndustriesServices() {
 
@@ -221,14 +222,10 @@ function IndustriesServices() {
                                                 </li>
                                             ))}
                                         </ul>
-
-                                        <a className="readmore" href="#!">
-                                            Explore Solutions
-                                            <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" />
-                                        </a>
-
+                                        <Link to="/industries" className="readmore">
+                                              Explore Solutions   <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" />
+                                        </Link>
                                     </div>
-
                                     <div className="serviceDetailsThumb">
                                         <img src={item.bigImg} alt="" />
                                     </div>

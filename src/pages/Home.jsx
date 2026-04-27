@@ -14,9 +14,11 @@ import { fetchBrands } from "../features/brand/brandSlice";
 
 import "../assets/css/home.css";
 import { ShimmerText } from "react-shimmer-effects";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const { data: products, loading, error } = useSelector(
     (state) => state.brand
@@ -85,7 +87,9 @@ function Home() {
             </div>
 
           </div>
-          <Button className="readmore">
+          <Button className="readmore" onClick={() => {
+            navigate('/about-us');
+          }}>
             Read More <FontAwesomeIcon icon={faArrowRightLong} className="ms-2" />
           </Button>
         </AboutSection>

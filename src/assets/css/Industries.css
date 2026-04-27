@@ -19,9 +19,9 @@
 .industriesGrid .industryCard .industryTitle {
     padding: 20px;
     margin: 0px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    font-family: 'Roboto Flex';
+  font-family: "Poppins", sans-serif;
     line-height: normal;
     transition: 0.8s all;
 }

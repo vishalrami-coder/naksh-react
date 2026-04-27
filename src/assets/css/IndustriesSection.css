@@ -97,11 +97,11 @@ img.serviceCardBgImg2 {
 
 .serviceCardWrapper .service_cardT {
     margin: 0px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.417em;
     font-weight: 600;
     color: #000;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -130,21 +130,21 @@ img.serviceCardBgImg2 {
 
 .serviceDetails h2 {
     margin: 0px;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: "Roboto Flex";
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
     color: #00509e;
     margin: 0px;
     text-align: left;
 }
 
 .serviceDetails p {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
     line-height: 32px;
     color: #222;
     font-weight: 400;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     padding: 0px;
 }
 
@@ -158,12 +158,11 @@ img.serviceCardBgImg2 {
 }
 
 .serviceDetails ul li {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
-    font-family: 'Roboto Flex';
-    padding: 0px;
-    font-weight: 500;
     color: #222;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -253,7 +252,6 @@ img.serviceCardBgImg2 {
 
     .serviceDetails h2 {
         font-size: 16px;
-        font-weight: 700;
         line-height: 28px;
     }
 
@@ -290,7 +288,8 @@ img.serviceCardBgImg2 {
     .gallery {
         gap: 0px;
     }
-    .serviceDetails ul{
+
+    .serviceDetails ul {
         grid-template-columns: 1fr;
     }
 }

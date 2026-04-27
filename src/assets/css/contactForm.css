@@ -11,7 +11,7 @@
     color: #000000 !important;
     font-size: 14px !important;
     font-weight: 600;
-    font-family: "Roboto Flex";
+    font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
     transition: 0.8s all;
     border-radius: 0px;
@@ -38,7 +38,7 @@
     color: #000000 !important;
     font-size: 14px !important;
     font-weight: 600;
-    font-family: "Roboto Flex";
+    font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
     transition: 0.8s all;
     border: 0px;
@@ -135,7 +135,6 @@
     }
 
     .secTitle h2 {
-        font-size: 22px;
         line-height: normal;
     }
 

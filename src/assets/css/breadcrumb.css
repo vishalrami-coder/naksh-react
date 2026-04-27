@@ -19,11 +19,12 @@
 }
 
 .cs_page_heading h1 {
-    font-size: 45px;
-    font-weight: 600;
-    font-family: 'Roboto Flex';
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     line-height: normal;
+    margin-bottom: 15px;
 }
 
 .cs_white_color {
@@ -46,7 +47,7 @@
     margin: 0px;
     color: #fff;
     font-weight: 500;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.5px;
 }
 
@@ -60,7 +61,7 @@
     margin: 0px;
     color: #fff;
     font-weight: 500;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0.5px;
 }
 

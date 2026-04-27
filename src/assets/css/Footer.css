@@ -18,21 +18,20 @@ footer {
 
 .footerLinksItem h5 {
     margin: 0px;
-    font-size: 22px;
-    font-weight: 600;
-    font-family: "Roboto Flex";
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
     color: #00509e;
 }
 
 .footerLinksItem ul li a {
     text-decoration: unset;
-    letter-spacing: 0.5px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 32px;
     padding: 0px;
     transition: 0.8s ease;
-    font-family: "Roboto Flex";
+    font-family: "Poppins", sans-serif;
     color: #222;
     margin: 0px;
 }
@@ -47,12 +46,12 @@ footer {
 }
 
 .footerLinksContent p {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 32px;
     padding: 0px;
     transition: 0.8s ease;
-    font-family: "Roboto Flex";
+    font-family: "Poppins", sans-serif;
     color: #222;
     margin: 0px;
 }
@@ -74,14 +73,14 @@ form.subscribe-form input {
     border-radius: 100px;
     border: 1px solid #2222;
     font-size: 13px;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     color: #000;
     font-weight: 400;
 }
 
 form.subscribe-form input::placeholder {
     font-size: 13px;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     color: #000;
 }
 
@@ -89,7 +88,7 @@ form.subscribe-form button {
     border: 0px;
     padding: 10px 16px;
     font-size: 13px;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     color: #fff;
     font-weight: 400;
     border-radius: 100px;
@@ -120,6 +119,9 @@ form.subscribe-form button {
 .copyRightText {
     padding: 20px 0px;
     border-top: 1px solid #00000014;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .copyRightText p {
@@ -127,13 +129,9 @@ form.subscribe-form button {
     text-align: left;
     font-size: 14px;
     font-weight: 500;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
     color: #222;
 }
-
-
-
-
 
 .legal-banner {
     position: relative;
@@ -153,9 +151,9 @@ form.subscribe-form button {
 }
 
 .Cta-content h1 {
-    font-size: 45px;
-    font-weight: 600;
-    font-family: 'Roboto Flex';
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     margin: 0px;
     line-height: normal;
@@ -167,7 +165,7 @@ form.subscribe-form button {
     margin: 0px;
     color: #fff;
     font-weight: 400;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
 }
 
 .Cta-buttons {
@@ -180,7 +178,7 @@ form.subscribe-form button {
 .Cta-btn {
     color: #fff;
     padding: 12px 22px;
-    border-radius: 30px;
+    border-radius: 12px;
     text-decoration: none;
     font-size: 14px;
     transition: 0.3s ease;
@@ -209,11 +207,11 @@ form.subscribe-form button {
 }
 
 .Cta-buttons a {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
     color: #fff;
-    font-weight: 400;
-    font-family: 'Roboto Flex';
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
     /* border: 1px solid #125494; */
     background: #004281;
 }
@@ -233,6 +231,25 @@ form.subscribe-form button {
     color: #003d77;
 }
 
+.copyRightText button {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: #92b4d647;
+    cursor: pointer;
+    border: 1px solid #2222;
+    transform: rotate(-90deg);
+}
+
+.copyRightText button svg {
+    margin: 0px !important;
+    color: #004f9d;
+    font-size: 14px;
+}
+
 
 @media (max-width: 1200px) {
     .Cta-content h1 {
@@ -248,7 +265,8 @@ form.subscribe-form button {
     .footerLinksItem h5 {
         font-size: 16px;
     }
-    .footerLinksWrapper{
+
+    .footerLinksWrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
@@ -288,7 +306,8 @@ form.subscribe-form button {
     .legal-banner {
         padding: 25px;
     }
-    .legal-banner::after{
+
+    .legal-banner::after {
         bottom: 0px;
         right: 0px;
     }

@@ -18,14 +18,13 @@
 
 .DarkAboutCounterContent h5 {
     margin: 0px;
-    font-size: 15px;
-    font-family: "Roboto Flex";
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
     color: #000000c2;
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-weight: 600;
-    letter-spacing: 0.2px;
     transition: 0.8s all;
 }
 
@@ -35,7 +34,7 @@
     line-height: 36px;
     color: #ffffff94;
     font-weight: 400;
-    font-family: 'Roboto Flex';
+    font-family: "Poppins", sans-serif;
 }
 
 .DarkAboutCounterNum {
@@ -53,9 +52,9 @@
 
 .DarkAboutCounterNum span {
     font-size: 35px;
-    color: #000000;
+    color: #000;
     font-weight: 900;
-    font-family: "Big Shoulders" !important;
+    font-family: "DM Sans", sans-serif;
 }
 
 .DarkAboutCounterNum em {
@@ -107,7 +106,7 @@
 
 @media (max-width: 767px) {
     .DarkAboutCounter {
-        grid-template-columns: 1fr 1fr ;
+        grid-template-columns: 1fr 1fr;
         gap: 15px;
         margin: 15px;
 
@@ -117,6 +116,6 @@
 
 @media (max-width: 600px) {
     .DarkAboutCounter {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
 }
