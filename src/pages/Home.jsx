@@ -1,5 +1,5 @@
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import AboutSection from "../components/AboutSection";
 import Counter from "../components/Counter";
 import FeaturedBrands from "../components/FeaturedBrands";
@@ -15,6 +15,7 @@ import { fetchBrands } from "../features/brand/brandSlice";
 import "../assets/css/home.css";
 import { ShimmerText } from "react-shimmer-effects";
 import { useNavigate } from "react-router-dom";
+import StickyButtons from "../components/StickyButtons";
 
 function Home() {
   const dispatch = useDispatch();
@@ -29,6 +30,7 @@ function Home() {
       dispatch(fetchBrands());
     }
   }, [dispatch, products.length, loading]);
+
 
 
   return (
@@ -97,6 +99,7 @@ function Home() {
       <Counter />
       <IndustriesSection />
       <TestimonialSection />
+ 
     </>
   );
 }
