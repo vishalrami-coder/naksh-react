@@ -9,11 +9,11 @@ import { Modal } from "react-bootstrap";
 
 const generateCaptcha = () => Math.floor(1000 + Math.random() * 9000).toString();
 
-function StickyButtons() {
-  const [show, setShow] = useState(false);
+export function StickyButtons({ show, setShow }) {
 
+  // const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  // var onInquiryOpen = () => setShow(true);
   const navigate = useNavigate();
   const [captcha, setCaptcha] = useState(generateCaptcha);
   const [captchaInput, setCaptchaInput] = useState("");
@@ -71,7 +71,7 @@ function StickyButtons() {
         <ul>
           <li
             className="none-li inquiery-icon imgnone"
-            onClick={handleShow}
+            onClick={() => setShow(true)}
           >
             <a
               href="#"
@@ -184,5 +184,3 @@ function StickyButtons() {
     </>
   );
 }
-
-export default StickyButtons;

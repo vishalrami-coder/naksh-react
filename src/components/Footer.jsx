@@ -9,132 +9,139 @@ import {
 
 import '../assets/css/Footer.css'
 import NakshLogo from "../assets/images/naksh-logo.webp";
+import { Button } from "./Button";
+import { useState } from "react";
+import { StickyButtons } from "./StickyButtons";
 
-function Footer() {
+function Footer({OnShowInquiry}) {
+
   return (
-    <footer>
-      <div className="container">
+    <>
+      <footer>
+        <div className="container">
 
-        {/* CTA Section */}
-        <div className="legal-banner">
-          <div className="Cta-content">
-            <h1>Looking for reliable Automation Solutions?</h1>
+          {/* CTA Section */}
+          <div className="legal-banner">
+            <div className="Cta-content">
+              <h1>Looking for reliable Automation Solutions?</h1>
 
-            <div className="Cta-buttons">
-              <Link to="/contact-us" className="Cta-btn">
-                Get in touch
-              </Link>
+              <div className="Cta-buttons">
+                <Button onClick={OnShowInquiry} className="Cta-btn">
+                  Get in touch
+                </Button>
 
-              {/* <Link to="/success" className="Cta-btn">
+                {/* <Link to="/success" className="Cta-btn">
                 New successes ↗
               </Link> */}
-            </div>
-          </div>
-        </div>
-
-        {/* Footer Links */}
-        <div className="footerLinksWrapper">
-          <div className="footerLinksItem">
-            <h5>Address</h5>
-            <div className="footerLinksContent">
-              <p>
-                A 133-134, 1st floor, Kalp Business Park, Near Kia Show Room, Opp. H.P. Petrol Pump, S. P. Ring Road, Nikol- Kathwada, Ahmedabad, Gujarat 382350
-              </p>
+              </div>
             </div>
           </div>
 
-          <div className="footerLinksItem">
-            <h5>Quick Links</h5>
-            <ul>
-              <li><Link className="nav-link" to="/">Home</Link></li>
-              <li><Link className="nav-link" to="/about-us">About Us</Link></li>
-              <li><Link className="nav-link" to="/products">Our Products</Link></li>
-              <li><Link className="nav-link" to="/industries">Industries</Link></li>
-              <li><Link className="nav-link" to="/blogs">Blogs</Link></li>
-              <li><Link className="nav-link" to="/contact-us">Contact Us</Link></li>
-            </ul>
-          </div>
-
-          <div className="footerLinksItem">
-            <h5>Featured Brands</h5>
-            <ul>
-
-              <li><Link className="nav-link" to="/products/bosch-rexroth">Bosch Rexroth</Link></li>
-              <li><Link className="nav-link" to="/products/huceen">Huceen</Link></li>
-              <li><Link className="nav-link" to="/products/schneider-electric">Schneider Electric</Link></li>
-            </ul>
-          </div>
-
-          <div className="footerLinksItem">
-            <h5>Subscribe</h5>
-            <div className="footerLinksContent">
-              <p>Join our community to receive updates</p>
-
-              <form className="subscribe-form">
-                <input type="email" placeholder="Enter your email" />
-                <button type="submit">Subscribe</button>
-              </form>
-
-              <p>By subscribing you agree to our Privacy Policy</p>
+          {/* Footer Links */}
+          <div className="footerLinksWrapper">
+            <div className="footerLinksItem">
+              <h5>Address</h5>
+              <div className="footerLinksContent">
+                <p>
+                  A 133-134, 1st floor, Kalp Business Park, Near Kia Show Room, Opp. H.P. Petrol Pump, S. P. Ring Road, Nikol- Kathwada, Ahmedabad, Gujarat 382350
+                </p>
+              </div>
             </div>
+
+            <div className="footerLinksItem">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><Link className="nav-link" to="/">Home</Link></li>
+                <li><Link className="nav-link" to="/about-us">About Us</Link></li>
+                <li><Link className="nav-link" to="/products">Our Products</Link></li>
+                <li><Link className="nav-link" to="/industries">Industries</Link></li>
+                <li><Link className="nav-link" to="/blogs">Blogs</Link></li>
+                <li><Link className="nav-link" to="/contact-us">Contact Us</Link></li>
+              </ul>
+            </div>
+
+            <div className="footerLinksItem">
+              <h5>Featured Brands</h5>
+              <ul>
+
+                <li><Link className="nav-link" to="/products/bosch-rexroth">Bosch Rexroth</Link></li>
+                <li><Link className="nav-link" to="/products/huceen">Huceen</Link></li>
+                <li><Link className="nav-link" to="/products/schneider-electric">Schneider Electric</Link></li>
+              </ul>
+            </div>
+
+            <div className="footerLinksItem">
+              <h5>Subscribe</h5>
+              <div className="footerLinksContent">
+                <p>Join our community to receive updates</p>
+
+                <form className="subscribe-form">
+                  <input type="email" placeholder="Enter your email" />
+                  <button type="submit">Subscribe</button>
+                </form>
+
+                <p>By subscribing you agree to our Privacy Policy</p>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Logo + Social */}
+          <div className="LogoWrapper">
+            <div className="logo">
+              <img
+                src={NakshLogo}
+                alt="logo"
+              />
+            </div>
+
+            <div className="socialMedia">
+              <ul>
+
+                <li>
+                  <a href="https://www.facebook.com/Nakshtech0707/" target="_blank">
+                    <FontAwesomeIcon icon={faFacebook} />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/naksh_technology/" target="_blank">
+                    <FontAwesomeIcon icon={faInstagram} />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://x.com/nakshtech0707" target="_blank">
+                    <FontAwesomeIcon icon={faXTwitter} />
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://wa.me/+919510615012" target="_blank">
+                    <FontAwesomeIcon icon={faWhatsapp} />
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          {/* Copyright */}
+          <div className="copyRightText">
+            <p>©2026 Naksh Technology</p>
+            <button
+              className="scrollTopBtn"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              <svg data-prefix="fas" data-icon="arrow-right-long" class="svg-inline--fa fa-arrow-right-long ms-2" role="img" viewBox="0 0 576 512" aria-hidden="true"><path fill="currentColor" d="M566.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L466.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l434.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path></svg>
+            </button>
           </div>
 
         </div>
-
-        {/* Logo + Social */}
-        <div className="LogoWrapper">
-          <div className="logo">
-            <img
-              src={NakshLogo}
-              alt="logo"
-            />
-          </div>
-
-          <div className="socialMedia">
-            <ul>
-
-              <li>
-                <a href="https://www.facebook.com/Nakshtech0707/" target="_blank">
-                  <FontAwesomeIcon icon={faFacebook} />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.instagram.com/naksh_technology/" target="_blank">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://x.com/nakshtech0707" target="_blank">
-                  <FontAwesomeIcon icon={faXTwitter} />
-                </a>
-              </li>
-
-              <li>
-                <a href="https://wa.me/+919510615012" target="_blank">
-                  <FontAwesomeIcon icon={faWhatsapp} />
-                </a>
-              </li>
-
-            </ul>
-          </div>
-
-        </div>
-
-        {/* Copyright */}
-        <div className="copyRightText">
-          <p>©2026 Naksh Technology</p>
-          <button
-            className="scrollTopBtn"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            <svg data-prefix="fas" data-icon="arrow-right-long" class="svg-inline--fa fa-arrow-right-long ms-2" role="img" viewBox="0 0 576 512" aria-hidden="true"><path fill="currentColor" d="M566.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L466.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l434.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"></path></svg>
-          </button>
-        </div>
-
-      </div>
-    </footer>
+      </footer>
+      
+    </>
   );
 }
 

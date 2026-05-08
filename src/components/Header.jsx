@@ -10,12 +10,13 @@ import "../assets/css/Header.css";
 import { fetchMenu } from "../features/menu/menuSlice";
 import { FaCaretRight } from "react-icons/fa6";
 
-function Header() {
+function Header({OnShowInquiry}) {
 
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const [showInquiry, setShowInquiry] = useState(false);
   const { data, loading } = useSelector((state) => state.menu);
 
   useEffect(() => {
@@ -104,7 +105,11 @@ function Header() {
                         <div className="ProductItem" key={brand.id}>
 
                           {/* 🔥 Brand Name */}
-                          <h5>{brand?.name}</h5>
+                          <h5 onClick={() => {
+                            navigate(`/products/${brand?.slug}`);
+                            setIsDropdownOpen(false);
+                            closeMenu();
+                          }}>{brand?.name}</h5>
 
                           {/* 🔥 Children (Category) */}
                           <ul>
@@ -155,7 +160,7 @@ function Header() {
                 <div className="searchBtn" data-bs-toggle="modal" data-bs-target="#searchModal">
                   <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </div>
-                <Button className="readmore">
+                <Button className="readmore" onClick={OnShowInquiry}>
                   Start a quick quote
                 </Button>
               </div>

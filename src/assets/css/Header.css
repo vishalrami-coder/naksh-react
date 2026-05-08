@@ -106,6 +106,7 @@
     text-align: left;
     border-bottom: 1px solid #4444;
     padding-bottom: 15px;
+    cursor: pointer;
 }
 
 .ProductItem {

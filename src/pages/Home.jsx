@@ -15,7 +15,6 @@ import { fetchBrands } from "../features/brand/brandSlice";
 import "../assets/css/home.css";
 import { ShimmerText } from "react-shimmer-effects";
 import { useNavigate } from "react-router-dom";
-import StickyButtons from "../components/StickyButtons";
 
 function Home() {
   const dispatch = useDispatch();

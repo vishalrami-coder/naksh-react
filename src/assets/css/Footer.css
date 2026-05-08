@@ -206,13 +206,13 @@ form.subscribe-form button {
     bottom: 65px;
 }
 
-.Cta-buttons a {
+.Cta-buttons .Cta-btn {
     font-size: 14px;
     margin: 0px;
     color: #fff;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
-    /* border: 1px solid #125494; */
+    border: 0px solid #125494;
     background: #004281;
 }
 
