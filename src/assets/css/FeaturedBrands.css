@@ -44,3 +44,71 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+
+.InnerFeaturedBrands {}
+
+.InnerFeaturedBrands .FeaturedBrandsGrid {
+    grid-template-columns: 1fr;
+}
+
+.InnerFeaturedBrands .FeaturedBrandsGrid .FeaturedBrandsGridItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: unset;
+    padding: 0px;
+    border: 0px;
+    background: #4444440f;
+    padding: 10px;
+}
+
+.InnerFeaturedBrands .FeaturedBrandsGrid .FeaturedBrandsGridItem .FeaturedBrandsImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #4444440f;
+    border-radius: 16px;
+}
+
+.InnerFeaturedBrands .FeaturedBrandsGrid .FeaturedBrandsContent {
+    padding: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.InnerFeaturedBrands .FeaturedBrandsGrid .FeaturedBrandsContent h5 {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #00509e;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+
+.InnerFeaturedBrands .FeaturedBrandsGrid .FeaturedBrandsContent .container{
+    padding: 0px;
+}
+
+.InnerFeaturedBrands .FeaturedBrandsGrid .FeaturedBrandsGridItem .FeaturedBrandsImg img {
+    aspect-ratio: 738/415;
+}
+
+@media (max-width: 991px) {
+    .InnerFeaturedBrands .FeaturedBrandsGrid .FeaturedBrandsGridItem {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .InnerFeaturedBrands .FeaturedBrandsGrid .FeaturedBrandsContent {
+        padding:  20px 0px 0px 0px  ;
+    }
+    .InnerFeaturedBrands .FeaturedBrandsGrid .FeaturedBrandsContent h5 {
+        font-size: 18px;
+    }
+
+}

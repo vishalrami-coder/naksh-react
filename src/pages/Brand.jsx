@@ -54,6 +54,7 @@ const Brand = () => {
                 <FeaturedBrands
                     mainTitle="Brands"
                     brands={products}
+                    isInner={true}
                 />
             )}
         </>

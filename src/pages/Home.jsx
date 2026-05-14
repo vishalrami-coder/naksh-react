@@ -61,6 +61,7 @@ function Home() {
         <FeaturedBrands
           mainTitle="Featured Brands"
           brands={products}
+          isHome={true}
         />
       )}
       <div className="HomeAboutUs">
