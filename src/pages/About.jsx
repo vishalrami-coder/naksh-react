@@ -76,11 +76,11 @@ function About() {
       degination: "Sr. Sales Engineer",
       ProfileImg: "https://datalog.nakshtechnology.com/wp-content/uploads/2025/05/001-1006-scaled-e1747919312795.jpg",
     },
-    {
-      Name: "Mr. Harshad More",
-      degination: "Sr.Sales Engineer",
-      ProfileImg: "https://datalog.nakshtechnology.com/wp-content/uploads/2025/05/001-1001-scaled-e1747919158795.jpg",
-    },
+    // {
+    //   Name: "Mr. Harshad More",
+    //   degination: "Sr.Sales Engineer",
+    //   ProfileImg: "https://datalog.nakshtechnology.com/wp-content/uploads/2025/05/001-1001-scaled-e1747919158795.jpg",
+    // },
 
     {
       Name: "Mr. Bhavin Patel",
@@ -102,7 +102,7 @@ function About() {
       <div className="aboutPage">
         <AboutSection>
           <p>
-            Naksh Technology Solution LLP is a premier provider of industrial automation solutions, headquartered in the industrial hub of Ahmedabad, Gujarat. With over a decade of industry expertise, we specialize in the distribution and implementation of high-end automation products, including HMI, PLCs, AC Drives (VFDs), systems, and industrial sensors.</p>
+            Naksh Technology Solutions LLP is a premier provider of industrial automation solutions, headquartered in the industrial hub of Ahmedabad, Gujarat. With over a decade of industry expertise, we specialize in the distribution and implementation of high-end automation products, including HMI, PLCs, AC Drives (VFDs), systems, and industrial sensors.</p>
           <p>
             As an ISO 9001-certified company, we serve as a vital link in the global supply chain, partnering with world-renowned brands like Siemens, Rexroth, Huceen, Schneider, and Pepperl+Fuchs. Our mission is to empower industries—from pharmaceuticals and textiles to automotive and renewable energy—with scalable, future-ready technologies that drive efficiency and digital transformation
           </p>
@@ -117,7 +117,7 @@ function About() {
           <SectionTitle
             smallTitle=""
             mainTitle="Why Partner With Us?"
-            Desc="At Naksh Technology, we don't just supply products; we deliver reliability. We understand the critical nature of industrial operations, which is why our business model is built around your success."
+            Desc="At Naksh Technology Solutions LLP, we don't just supply products; we deliver reliability. We understand the critical nature of industrial operations, which is why our business model is built around your success."
           />
 
           <div className="cs_card_1_wrap">

@@ -129,7 +129,7 @@ function Footer({OnShowInquiry}) {
 
           {/* Copyright */}
           <div className="copyRightText">
-            <p>©2026 Naksh Technology</p>
+            <p>©2026 Naksh Technology Solutions LLP</p>
             <button
               className="scrollTopBtn"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

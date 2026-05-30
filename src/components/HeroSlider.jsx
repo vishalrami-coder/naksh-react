@@ -9,7 +9,7 @@ import banner2 from "../assets/images/banner/naksh-b2.webp";
 import banner3 from "../assets/images/banner/naksh-b3.webp";
 import banner4 from "../assets/images/banner/naksh-b4.webp";
 import banner5 from "../assets/images/banner/naksh-b5.webp";
-import banner6 from "../assets/images/banner/naksh-b6.webp";
+// import banner6 from "../assets/images/banner/naksh-b6.webp";
 
 const slides = [
     {
@@ -18,7 +18,7 @@ const slides = [
         subtitle: "TO NAKSH TECHNOLOGY",
         desc: (
             <>
-                An independent company with global market leadership in B2B Distribution of<br /> 
+                An independent company with global market leadership in B2B Distribution of<br />
                 Automation Products and Drives, solutions, and related services.
 
             </>
@@ -39,18 +39,16 @@ const slides = [
     },
     {
         img: banner3,
-        title: "SIEMENS",
-        subtitle: "AUTOMATION SOLUTIONS",
+        title: "rexroth",
+        subtitle: "A Bosch Company",
 
         desc: (
             <>
-                We deliver reliable Siemens PLCs, Drives, HMI, SCADA and <br />
-                Servo systems-engineered and supported by our expert <br />
-                automation team for real industrial performance.
+                Driving industrial excellence with advanced automation, <br /> motion control, hydraulics, and drive technologies <br /> from Bosch Rexroth.
             </>
         ),
         // desc: "Reliable Siemens PLCs, Drives, HMI, SCADA and Servo systems supported by our expert automation team.",
-        btn: "Explore Siemens",
+        btn: "Explore Rexroth",
     },
     {
         img: banner4,
@@ -63,7 +61,7 @@ const slides = [
                 performance, precision, and long-term reliability.
             </>
         ),
-        btn: "EXPLORE HUCEEN SOLUTIONS",
+        btn: "Explore Huceen Solutions",
     },
     {
         img: banner5,
@@ -72,24 +70,24 @@ const slides = [
         desc: (
             <>
                 Smart power distribution, control, and automation solutions from <br />
-                Schneider-implemented and optimized by Naksh Technology to <br />
+                Schneider-implemented and optimized by Naksh Technology Solutions LLP to <br />
                 ensure efficiency, safety, and scalability.
             </>
         ),
-        btn: "EXPLORE SCHNEIDER PRODUCTS",
+        btn: "Explore Schneider Products",
     },
-    {
-        img: banner6,
-        title: "PEPPERL + FUCHS",
-        subtitle: "INDUSTRIAL SOLUTIONS",
-        desc: (
-            <>
-                Delivering innovative sensor technology and intrinsic safety solutions <br />
-                for reliable industrial automation.
-            </>
-        ),
-        btn: "Explore Pepperl + Fuchs",
-    },
+    // {
+    //     img: banner6,
+    //     title: "PEPPERL + FUCHS",
+    //     subtitle: "INDUSTRIAL SOLUTIONS",
+    //     desc: (
+    //         <>
+    //             Delivering innovative sensor technology and intrinsic safety solutions <br />
+    //             for reliable industrial automation.
+    //         </>
+    //     ),
+    //     btn: "Explore Pepperl + Fuchs",
+    // },
 ];
 
 function HeroSlider() {

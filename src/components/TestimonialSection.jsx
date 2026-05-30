@@ -45,7 +45,7 @@ function TestimonialSection() {
         },
         {
             logo: ArtechFurnitureLogo,
-            text: "Great experience with Naksh Technology. Excellent product and service. I give a five-star rating!",
+            text: "Great experience with Naksh Technology Solutions LLP. Excellent product and service. I give a five-star rating!",
             name: "Mr. Amit Gajera",
             company: "Artech Furniture Private Limited",
             initials: "AG",
