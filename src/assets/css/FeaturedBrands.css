@@ -45,10 +45,6 @@
     }
 }
 
-
-
-.InnerFeaturedBrands {}
-
 .InnerFeaturedBrands .FeaturedBrandsGrid {
     grid-template-columns: 1fr;
 }
@@ -70,6 +66,7 @@
     background: #fff;
     border: 1px solid #4444440f;
     border-radius: 16px;
+    height: 100%;
 }
 
 .InnerFeaturedBrands .FeaturedBrandsGrid .FeaturedBrandsContent {

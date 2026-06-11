@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import DOMPurify from "dompurify";
 import Breadcrumb from "../components/breadcrumb";
 import ProductDetails from "../components/productDetails";
@@ -12,10 +12,12 @@ import PointsItem from "../components/PointsItem";
 import ProductImageSection from "../components/ProductImageSection";
 import ProductDetailsWithTabs from "../components/ProductDetailsWithTabs";
 import BrandDetailsBread from "../assets/images/breadcum/product.webp";
+import { StickyButtons } from "../components/StickyButtons";
+import ContactUs from "./ContactUs";
 
 const BrandDetails = () => {
     const { "*": fullPath } = useParams();
-
+    const [showInquiry, setShowInquiry] = useState(false);
     const productSlugs = fullPath?.split("/") || [];
     const slug = productSlugs[productSlugs.length - 1];
 
@@ -110,6 +112,7 @@ const BrandDetails = () => {
                     BrandDetails={true}
                     productSlugs={productSlugs[0]}
                     huceenImage={data}
+                    OnShowInquiry={() => setShowInquiry(true)}
                 />
 
                 {data?.product_sections?.length > 0 &&
@@ -156,6 +159,13 @@ const BrandDetails = () => {
                         faqData={data?.product_faqs}
                     />
                 )}
+
+                <StickyButtons
+                    show={showInquiry}
+                    setShow={setShowInquiry}
+                />
+
+                <ContactUs />
             </div>
         </>
     );

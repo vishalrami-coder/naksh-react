@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ProductCard from './productCard';
 import { useNavigate } from 'react-router-dom';
 import { useParams, useLocation } from "react-router-dom";
+import { StickyButtons } from './StickyButtons';
 
 const ProductTabs = ({ tabsData }) => {
     const { "*": fullPath } = useParams();
@@ -10,6 +11,7 @@ const ProductTabs = ({ tabsData }) => {
     const slug = slugs[slugs?.length - 1];
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState(0);
+    const [showInquiry, setShowInquiry] = useState(false);
 
     return (
         <div className="productSec Custompending">
@@ -41,9 +43,10 @@ const ProductTabs = ({ tabsData }) => {
                                             title={tabItem?.product_name}
                                             brand={tabItem?.group_name}
                                             onClick={() => {
-                                                 navigate(`/productsdetails/${fullPath}/${tabItem?.slug}`)
+                                                navigate(`/productsdetails/${fullPath}/${tabItem?.slug}`)
                                                 // navigate(`/products/${fullPath}/${tabItem?.slug}`)
                                             }}
+                                            OnShowInquiry={() => setShowInquiry(true)}
                                         />
                                     ))}
                                 </div>
@@ -53,6 +56,11 @@ const ProductTabs = ({ tabsData }) => {
                     </div>
                 </div>
             </div>
+
+            <StickyButtons
+                show={showInquiry}
+                setShow={setShowInquiry}
+            />
         </div>
     );
 };

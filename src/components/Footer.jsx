@@ -13,7 +13,7 @@ import { Button } from "./Button";
 import { useState } from "react";
 import { StickyButtons } from "./StickyButtons";
 
-function Footer({OnShowInquiry}) {
+function Footer({ OnShowInquiry }) {
 
   return (
     <>
@@ -67,6 +67,7 @@ function Footer({OnShowInquiry}) {
                 <li><Link className="nav-link" to="/products/bosch-rexroth">Bosch Rexroth</Link></li>
                 <li><Link className="nav-link" to="/products/huceen">Huceen</Link></li>
                 <li><Link className="nav-link" to="/products/schneider-electric">Schneider Electric</Link></li>
+                <li><Link className="nav-link" to="/products/siemens">Siemens</Link></li>
               </ul>
             </div>
 
@@ -117,7 +118,16 @@ function Footer({OnShowInquiry}) {
                 </li>
 
                 <li>
-                  <a href="https://wa.me/+919510615012" target="_blank">
+                  <a onClick={() =>
+                    window?.gtag?.("event", "click", {
+                      event_category: "click on whatsapp",
+                      event_action: "Mobile",
+                      event_label: "+917041510802",
+                    })
+                  }
+                    href="https://api.whatsapp.com/send?phone=917041510802&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faWhatsapp} />
                   </a>
                 </li>
@@ -140,7 +150,7 @@ function Footer({OnShowInquiry}) {
 
         </div>
       </footer>
-      
+
     </>
   );
 }

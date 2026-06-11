@@ -1,14 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import FeaturedBrands from "../components/FeaturedBrands";
 import Breadcrumb from "../components/breadcrumb";
 import { fetchBrands } from "../features/brand/brandSlice";
 import { ShimmerText } from "react-shimmer-effects";
 import BrandBread from "../assets/images/breadcum/product.webp";
+import { StickyButtons } from "../components/StickyButtons";
 
 
 const Brand = () => {
     const dispatch = useDispatch();
+    const [showInquiry, setShowInquiry] = useState(false);
 
     const { data: products, loading, error } = useSelector(
         (state) => state.brand
@@ -55,8 +57,14 @@ const Brand = () => {
                     mainTitle="Brands"
                     brands={products}
                     isInner={true}
+                    OnShowInquiry={() => setShowInquiry(true)}
+
                 />
             )}
+            <StickyButtons
+                show={showInquiry}
+                setShow={setShowInquiry}
+            />
         </>
     );
 };

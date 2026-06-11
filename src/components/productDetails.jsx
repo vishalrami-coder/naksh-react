@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import DOMPurify from "dompurify";
 import nakshplaceholder from "../assets/images/nakshplaceholder_new.jpg";
+import { Button } from "./Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { StickyButtons } from "./StickyButtons";
+import ContactUs from "../pages/ContactUs";
 
 
-const ProductDetails = ({ image, smallTitle, mainTitle, description, short_description, productListing, BrandDetails, ProductNullImg, productSlugs, huceenImage }) => {
+const ProductDetails = ({ image, smallTitle, mainTitle, description, short_description, productListing, BrandDetails, ProductNullImg, productSlugs, huceenImage, OnShowInquiry }) => {
+    const [showInquiry, setShowInquiry] = useState(false);
 
     console.log(huceenImage, 'image==>');
 
@@ -100,7 +106,7 @@ const ProductDetails = ({ image, smallTitle, mainTitle, description, short_descr
                                     </Swiper>
 
                                 ) :
-                                    <img src={image} alt="dafadf" />
+                                    <img src={image} alt="Naksh Technology Solutions LLP Img" />
                                 }
                             </div>
                         }
@@ -115,7 +121,7 @@ const ProductDetails = ({ image, smallTitle, mainTitle, description, short_descr
                                 mainTitle={mainTitle}
                                 className="mb-0"
                             />
-                            {(productSlugs == "huceen" || productSlugs == "bosch-rexroth" ) ?
+                            {(productSlugs == "huceen" || productSlugs == "bosch-rexroth") ?
                                 <div className="desc huceenDetails">
                                     {short_description && (
                                         <p
@@ -144,10 +150,21 @@ const ProductDetails = ({ image, smallTitle, mainTitle, description, short_descr
                                 </div>
                             }
 
+                            <div className="produInqueryBtn">
+                                <Button className="readmore" onClick={OnShowInquiry}>
+                                    Get a Quote
+                                    <FontAwesomeIcon icon={faArrowRightLong} />
+                                </Button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+            <StickyButtons
+                show={showInquiry}
+                setShow={setShowInquiry}
+            />
         </div >
     );
 };

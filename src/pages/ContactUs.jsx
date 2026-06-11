@@ -48,7 +48,7 @@ function ContactUs() {
   ];
 
   return (
-    <>
+    <div className="MainContactUsPage">
       <Breadcrumb
         BreadcrumbTitle="Contact Us"
         BreadcrumbActiveTitle="Contact Us"
@@ -57,7 +57,6 @@ function ContactUs() {
       <section className="commonSection CustomPeding">
         <div className="container">
           <div className="row">
-
             <div className="col-xl-4 col-md-6 col-lg-5">
               <div className="contactInfoWrapper">
                 {ContactInfoData.map((item, index) => (
@@ -101,7 +100,7 @@ function ContactUs() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-    </>
+    </div>
   );
 }
 

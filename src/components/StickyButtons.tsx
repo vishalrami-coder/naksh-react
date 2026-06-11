@@ -38,7 +38,7 @@ export function StickyButtons({ show, setShow }) {
       formData.append("requirement", form.requirement);
       formData.append("form-type", "inquiry");
 
-      await fetch("https://nakshtechnology.in/inquiry-action.php", { method: "POST", body: formData });
+      await fetch("https://www.nakshtechnology.in/inquiry-action.php", { method: "POST", body: formData });
 
       setForm({ name: "", company: "", email: "", city: "", phone: "", requirement: "" });
       setCaptchaInput(""); setCaptcha(generateCaptcha());
@@ -61,8 +61,6 @@ export function StickyButtons({ show, setShow }) {
   //   // open modal or trigger function here
   //   console.log("Enquiry clicked");
   // };
-
-
 
   return (
     <>
@@ -94,7 +92,16 @@ export function StickyButtons({ show, setShow }) {
             </a>
           </li>
           <li className="download-pdf WhatsAppBtn none-li inquiery-icon imgnone">
-            <a href="tel:+917041510802">
+            <a onClick={() =>
+              window?.gtag?.("event", "click", {
+                event_category: "click on whatsapp",
+                event_action: "Mobile",
+                event_label: "+917041510802",
+              })
+            }
+              href="https://api.whatsapp.com/send?phone=917041510802&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
+              target="_blank"
+              rel="noopener noreferrer">
               <span className="icon">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
@@ -175,7 +182,7 @@ export function StickyButtons({ show, setShow }) {
               <span title="Click to refresh" onClick={() => setCaptcha(generateCaptcha())}>{captcha}</span>
             </div>
             <button type="submit" disabled={isSubmitting} className='submitBtn'  >
-              {isSubmitting ? (<><svg className="animate-spin h-4 w-4" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" /></svg>Processing...</>) : (<><Send className="w-4 h-4" /> Submit Your Inquiry</>)}
+              {isSubmitting ? (<><svg className="animate-spin loaderSpiner" viewBox="0 0 24 24" fill="none"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" /></svg>Processing...</>) : (<><Send className="w-4 h-4" /> Submit Your Inquiry</>)}
             </button>
             <p >🔒 Your information is secure and will never be shared</p>
           </form>

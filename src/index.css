@@ -751,6 +751,67 @@ ul#sideService.open li {
     background: #2db640 !important;
 }
 
+.loaderSpiner {
+    width: 24px;
+    height: 24px;
+}
+
+
+.produInqueryBtn {
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-top: 15px;
+}
+
+.produInqueryBtn .readmore {
+    background: #00509e;
+    color: #fff;
+}
+
+.produInqueryBtn .readmore:nth-child(1) {
+    background: #dce6f0;
+    color: #00509e;
+}
+
+
+.productListing .productContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.productListing .productContent .produInqueryBtn {
+    margin: 5px 0px 0px 0px;
+    width: 100%;
+    padding-top: 15px;
+    border-top: 1px solid #0000000a;
+}
+
+.productListing .productContent .produInqueryBtn button {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.productListing .productContent .produInqueryBtn button.readmore:nth-child(1) {
+    background: #fff;
+}
+
+
+.innerPage .MainContactUsPage .cs_page_heading,
+.innerPage .MainContactUsPage .mapIframe,
+.DetailsPage .MainContactUsPage .cs_page_heading,
+.DetailsPage .MainContactUsPage .mapIframe{
+    display: none;
+}
+
 /* -----------------------  2 side button ------------------------------------- */
 
 /* mobile side btn */

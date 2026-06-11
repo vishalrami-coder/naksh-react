@@ -1,5 +1,5 @@
 import { useParams, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Breadcrumb from "../components/breadcrumb";
 import ProductDetails from "../components/productDetails";
 import ProductCard from "../components/productCard";
@@ -10,10 +10,13 @@ import FAQSection from "../components/FAQSection";
 import ProductTabs from "../components/ProductTabs";
 import { ShimmerText } from "react-shimmer-effects";
 import BrandBread from "../assets/images/breadcum/product.webp";
-
+import { StickyButtons } from "../components/StickyButtons";
+import ContactUs from "./ContactUs";
 
 const Categories = () => {
     // const { slug } = useParams();
+    const [showInquiry, setShowInquiry] = useState(false);
+
     const { "*": fullPath } = useParams();
     const slugs = fullPath?.split("/") || [];
     const slug = slugs[slugs?.length - 1];
@@ -96,28 +99,63 @@ const Categories = () => {
                                 ? [data?.parent?.section_content]
                                 : []
                         }
+                        OnShowInquiry={() => setShowInquiry(true)}
                     />
                 }
+                {data?.data?.length > 0 &&
+                    <div className="productListing bgGrey CustomPeding">
+                        <div className="container">
+                            {loading ? (
+                                <div className="productGrid">
+                                    {Array(4)
+                                        .fill("")
+                                        .map((_, index) => (
+                                            <div className="productItem" key={index}>
+                                                <div className="productImage p-0">
+                                                    <ShimmerText className="aboutImgShimmer-box" line={1} />
+                                                </div>
+                                                <div className="productContent">
+                                                    <ShimmerText className="aboutImgShimmer-box" line={1} />
+                                                </div>
+                                            </div>
+                                        ))}
+                                </div>
+                            ) : (data?.data?.length > 0) ? (
+                                <>
+                                    <div className="productGrid">
+                                        {data?.data?.map((item, index) => (
+                                            <ProductCard
+                                                key={index}
+                                                image={item?.image_url}
+                                                title={item?.name}
+                                                brand={formatSlug(data?.parent?.name)}
+                                                onClick={() => {
+                                                    navigate(`/products/${fullPath}/${item?.slug}`);
+                                                }}
+                                                OnShowInquiry={() => setShowInquiry(true)}
+                                            />
+                                        ))}
 
-                <div className="productListing bgGrey CustomPeding">
-                    <div className="container">
-                        {loading ? (
-                            <div className="productGrid">
-                                {Array(4)
-                                    .fill("")
-                                    .map((_, index) => (
-                                        <div className="productItem" key={index}>
-                                            <div className="productImage p-0">
-                                                <ShimmerText className="aboutImgShimmer-box" line={1} />
-                                            </div>
-                                            <div className="productContent">
-                                                <ShimmerText className="aboutImgShimmer-box" line={1} />
-                                            </div>
-                                        </div>
+                                    </div>
+                                </>
+                            ) : data?.parent?.products?.length > 0 ? (
+                                <div className="productGrid">
+                                    {data?.parent?.products?.map((item, index) => (
+                                        <ProductCard
+                                            key={index}
+                                            image={item?.main_image}
+                                            title={item?.product_name}
+                                            brand={formatSlug(data?.parent?.name)}
+                                            onClick={() => {
+                                                navigate(`/productsdetails/${fullPath}/${item?.slug}`);
+                                            }}
+                                            OnShowInquiry={() => setShowInquiry(true)}
+                                        />
                                     ))}
-                            </div>
-                        ) : (data?.data?.length > 0) ? (
-                            <>
+                                </div>
+                            ) : tabsData?.length > 0 ? (
+                                <ProductTabs tabsData={tabsData} />
+                            ) : (
                                 <div className="productGrid">
                                     {data?.data?.map((item, index) => (
                                         <ProductCard
@@ -128,44 +166,14 @@ const Categories = () => {
                                             onClick={() => {
                                                 navigate(`/products/${fullPath}/${item?.slug}`);
                                             }}
+                                            OnShowInquiry={() => setShowInquiry(true)}
                                         />
                                     ))}
-                                    
                                 </div>
-                            </>
-                        ) : data?.parent?.products?.length > 0 ? (
-                            <div className="productGrid">
-                                {data?.parent?.products?.map((item, index) => (
-                                    <ProductCard
-                                        key={index}
-                                        image={item?.main_image}
-                                        title={item?.product_name}
-                                        brand={formatSlug(data?.parent?.name)}
-                                        onClick={() => {
-                                            navigate(`/productsdetails/${fullPath}/${item?.slug}`);
-                                        }}
-                                    />
-                                ))}
-                            </div>
-                        ) : tabsData?.length > 0 ? (
-                            <ProductTabs tabsData={tabsData} />
-                        ) : (
-                            <div className="productGrid">
-                                {data?.data?.map((item, index) => (
-                                    <ProductCard
-                                        key={index}
-                                        image={item?.image_url}
-                                        title={item?.name}
-                                        brand={formatSlug(data?.parent?.name)}
-                                        onClick={() => {
-                                            navigate(`/products/${fullPath}/${item?.slug}`);
-                                        }}
-                                    />
-                                ))}
-                            </div>
-                        )}
+                            )}
+                        </div>
                     </div>
-                </div>
+                }
 
 
                 {data?.parent?.faq_items?.length > 0 &&
@@ -175,6 +183,12 @@ const Categories = () => {
                         faqData={data?.parent?.faq_items}
                     />
                 }
+
+                <StickyButtons
+                    show={showInquiry}
+                    setShow={setShowInquiry}
+                />
+                <ContactUs />
 
             </div >
 
