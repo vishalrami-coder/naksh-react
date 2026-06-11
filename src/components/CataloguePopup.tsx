@@ -35,7 +35,7 @@ const CataloguePopup = ({ open, onOpenChange }: CataloguePopupProps) => {
       formData.append("phone", form.phone);
       formData.append("form-type", "catalogue");
 
-      await fetch("https://mottotechcoolingtower.com/lp/inquiry-action.php", { method: "POST", body: formData });
+      await fetch("https://nakshtechnology.in/inquiry-action.php", { method: "POST", body: formData });
 
       setForm({ name: "", company: "", email: "", city: "", phone: "" });
       setCaptchaInput(""); setCaptcha(generateCaptcha());

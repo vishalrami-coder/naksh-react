@@ -38,7 +38,7 @@ export function StickyButtons({ show, setShow }) {
       formData.append("requirement", form.requirement);
       formData.append("form-type", "inquiry");
 
-      await fetch("https://mottotechcoolingtower.com/lp/inquiry-action.php", { method: "POST", body: formData });
+      await fetch("https://nakshtechnology.in/inquiry-action.php", { method: "POST", body: formData });
 
       setForm({ name: "", company: "", email: "", city: "", phone: "", requirement: "" });
       setCaptchaInput(""); setCaptcha(generateCaptcha());

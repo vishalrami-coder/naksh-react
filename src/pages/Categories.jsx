@@ -116,31 +116,21 @@ const Categories = () => {
                                         </div>
                                     ))}
                             </div>
-                        ) : (data?.parent?.products?.length > 0 && data?.data?.length > 0) ? (
+                        ) : (data?.data?.length > 0) ? (
                             <>
                                 <div className="productGrid">
                                     {data?.data?.map((item, index) => (
                                         <ProductCard
                                             key={index}
                                             image={item?.image_url}
-                                            title={item?.section_title}
+                                            title={item?.name}
                                             brand={formatSlug(data?.parent?.name)}
                                             onClick={() => {
-                                                navigate(`/productsdetails/${fullPath}/${item?.slug}`);
+                                                navigate(`/products/${fullPath}/${item?.slug}`);
                                             }}
                                         />
                                     ))}
-                                    {data?.parent?.products?.map((item, index) => (
-                                        <ProductCard
-                                            key={index}
-                                            image={item?.main_image}
-                                            title={item?.product_name}
-                                            brand={formatSlug(data?.parent?.name)}
-                                            onClick={() => {
-                                                navigate(`/productsdetails/${fullPath}/${item?.slug}`);
-                                            }}
-                                        />
-                                    ))}
+                                    
                                 </div>
                             </>
                         ) : data?.parent?.products?.length > 0 ? (

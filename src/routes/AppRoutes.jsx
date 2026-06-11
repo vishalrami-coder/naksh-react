@@ -9,7 +9,7 @@ import BrandDetails from "../pages/BrandDetails";
 import BlogPage from "../pages/BlogPage";
 import BlogDetails from "../pages/BlogDetails";
 import CategoryPage from "../pages/CategoryPage";
-
+import ThankyouPage from "../pages/Thankyou";
 function AppRoutes() {
   return (
     <Routes>
@@ -23,6 +23,8 @@ function AppRoutes() {
       <Route path="/blogs" element={<BlogPage />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/category" element={<BlogPage />} />
+      <Route path="/thank-you" element={<ThankyouPage />} />
+      <Route path="/thank-you-catalogue" element={<ThankyouPage />} />
       <Route path="/category/:slug" element={<CategoryPage />} />
     </Routes>
   );

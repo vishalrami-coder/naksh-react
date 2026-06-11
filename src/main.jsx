@@ -21,7 +21,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/nakshNewPage">
+    <BrowserRouter>
       <Provider store={store}>
         <ScrollToTop />
         <App />
