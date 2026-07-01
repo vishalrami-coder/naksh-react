@@ -102,13 +102,10 @@ export function StickyButtons({ show, setShow }) {
               href="https://api.whatsapp.com/send?phone=917041510802&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
               target="_blank"
               rel="noopener noreferrer">
-              <span className="icon">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                  alt="WhatsApp"
-                />
-              </span>
-              <span className="btn-text"> WhatsApp</span>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp"
+              />
             </a>
           </li>
         </ul>
