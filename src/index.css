@@ -808,8 +808,12 @@ ul#sideService.open li {
 .innerPage .MainContactUsPage .cs_page_heading,
 .innerPage .MainContactUsPage .mapIframe,
 .DetailsPage .MainContactUsPage .cs_page_heading,
-.DetailsPage .MainContactUsPage .mapIframe{
+.DetailsPage .MainContactUsPage .mapIframe {
     display: none;
+}
+
+.productListing~.productListing {
+    padding-top: 0px;
 }
 
 /* -----------------------  2 side button ------------------------------------- */

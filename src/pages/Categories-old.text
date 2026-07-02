@@ -21,7 +21,7 @@ const Categories = () => {
     const slugs = fullPath?.split("/") || [];
     const slug = slugs[slugs?.length - 1];
 
-    console.log(slug, 'slugdfsdfad')
+    console.log(slug, 'slug')
 
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -104,9 +104,7 @@ const Categories = () => {
                         OnShowInquiry={() => setShowInquiry(true)}
                     />
                 }
-
-                {/* old */}
-                {/* {data?.data?.length > 0 &&
+                {data?.data?.length > 0 &&
                     <div className="productListing bgGrey CustomPeding">
                         <div className="container">
                             {loading ? (
@@ -177,65 +175,7 @@ const Categories = () => {
                             )}
                         </div>
                     </div>
-                } */}
-
-                {data?.data?.length > 0 && (
-                    <div className="productListing bgGrey CustomPeding">
-                        <div className="container">
-                            <div className="productGrid">
-                                {data?.data?.map((item, index) => (
-                                    <ProductCard
-                                        key={index}
-                                        image={item?.image_url}
-                                        title={item?.name}
-                                        brand={formatSlug(data?.parent?.name)}
-                                        onClick={() => {
-                                            navigate(`/products/${fullPath}/${item?.slug}`);
-                                        }}
-                                        OnShowInquiry={() => setShowInquiry(true)}
-                                    />
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                )}
-                {data?.parent?.products?.length > 0 && (
-                    <div className="productListing bgGrey CustomPeding">
-                        <div className="container">
-                            {loading ? (
-                                <div className="productGrid">
-                                    {Array(4)
-                                        .fill("")
-                                        .map((_, index) => (
-                                            <div className="productItem" key={index}>
-                                                <div className="productImage p-0">
-                                                    <ShimmerText className="aboutImgShimmer-box" line={1} />
-                                                </div>
-                                                <div className="productContent">
-                                                    <ShimmerText className="aboutImgShimmer-box" line={1} />
-                                                </div>
-                                            </div>
-                                        ))}
-                                </div>
-                            ) : (
-                                <div className="productGrid">
-                                    {data?.parent?.products?.map((item, index) => (
-                                        <ProductCard
-                                            key={index}
-                                            image={item?.main_image}
-                                            title={item?.product_name}
-                                            brand={formatSlug(data?.parent?.name)}
-                                            onClick={() => {
-                                                navigate(`/productsdetails/${fullPath}/${item?.slug}`);
-                                            }}
-                                            OnShowInquiry={() => setShowInquiry(true)}
-                                        />
-                                    ))}
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                )}
+                }
 
 
                 {data?.parent?.faq_items?.length > 0 &&

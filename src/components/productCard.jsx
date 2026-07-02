@@ -6,7 +6,7 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "./Button";
 
 const ProductCard = ({ link, image, title, brand, onClick, OnShowInquiry }) => {
-    console.log(image, 'image==>');
+    // console.log(image, 'image==> sfgsfg');
 
     return (
         <div className="productItem" >

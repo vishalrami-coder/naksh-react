@@ -14,7 +14,7 @@ import ContactUs from "../pages/ContactUs";
 const ProductDetails = ({ image, smallTitle, mainTitle, description, short_description, productListing, BrandDetails, ProductNullImg, productSlugs, huceenImage, OnShowInquiry }) => {
     const [showInquiry, setShowInquiry] = useState(false);
 
-    console.log(huceenImage, 'image==>');
+    // console.log(huceenImage, 'image==>');
 
     const cleanHTML = (html) => {
         if (!html) return "";
@@ -84,7 +84,9 @@ const ProductDetails = ({ image, smallTitle, mainTitle, description, short_descr
 
                         {BrandDetails &&
                             <div className="aboutImg ">
-                                {Array.isArray(huceenImage?.product_images) && huceenImage?.product_images.length > 1 ? (
+                                {huceenImage?.main_image &&
+                                    Array.isArray(huceenImage?.product_images) &&
+                                    huceenImage.product_images.length > 0 ? (
                                     <Swiper
                                         modules={[Navigation, Pagination, Autoplay]}
                                         spaceBetween={20}
@@ -92,22 +94,35 @@ const ProductDetails = ({ image, smallTitle, mainTitle, description, short_descr
                                         navigation
                                         pagination={{ clickable: true }}
                                         autoplay={{ delay: 2500, disableOnInteraction: false }}
-                                        loop={true}
+                                        loop
                                         className="systemOverviewSwiper"
                                     >
-                                        <SwiperSlide key={100}>
-                                            <img src={huceenImage?.main_image} alt={`slide-${100}`} />
+                                        {/* Main Image */}
+                                        <SwiperSlide>
+                                            <img
+                                                src={huceenImage.main_image}
+                                                alt="Main Product"
+                                            />
                                         </SwiperSlide>
-                                        {huceenImage?.product_images?.map((item, index) => (
-                                            <SwiperSlide key={index}>
-                                                <img src={item?.image_path} alt={`slide-${index}`} />
-                                            </SwiperSlide>
-                                        ))}
-                                    </Swiper>
 
-                                ) :
-                                    <img src={image} alt="Naksh Technology Solutions LLP Img" />
-                                }
+                                        {/* Product Images */}
+                                        {huceenImage.product_images
+                                            .filter((item) => item?.image_path)
+                                            .map((item, index) => (
+                                                <SwiperSlide key={item.id || index}>
+                                                    <img
+                                                        src={item.image_path}
+                                                        alt={`slide-${index + 1}`}
+                                                    />
+                                                </SwiperSlide>
+                                            ))}
+                                    </Swiper>
+                                ) : (
+                                    <img
+                                        src={huceenImage?.main_image || image}
+                                        alt="Naksh Technology Solutions LLP Img"
+                                    />
+                                )}
                             </div>
                         }
 

@@ -4,12 +4,12 @@ import About from "../pages/About";
 import Industries from "../pages/Industries";
 import ContactUs from "../pages/ContactUs";
 import Brand from "../pages/Brand";
-import Categories from "../pages/Categories";
 import BrandDetails from "../pages/BrandDetails";
 import BlogPage from "../pages/BlogPage";
 import BlogDetails from "../pages/BlogDetails";
 import CategoryPage from "../pages/CategoryPage";
 import ThankyouPage from "../pages/Thankyou";
+import Categories from "../pages/Categories";
 function AppRoutes() {
   return (
     <Routes>
