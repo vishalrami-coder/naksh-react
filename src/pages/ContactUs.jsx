@@ -39,9 +39,9 @@ function ContactUs() {
       title: "Quick Contact",
       content: (
         <>
-          <Link to="tel:+917041510802">+91 70415 10802</Link>
+          <Link to="tel:+919033012303">+91 90330 12303</Link>
           <br />
-          <Link to="mailto:sales@nakshtechnology.com">sales@nakshtechnology.com</Link>
+          <Link to="mailto:inquiry2@nakshtechnology.in">inquiry2@nakshtechnology.in</Link>
         </>
       ),
     },

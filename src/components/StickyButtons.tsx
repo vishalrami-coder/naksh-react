@@ -52,7 +52,7 @@ export function StickyButtons({ show, setShow }) {
   //     window.gtag('event', 'send', {
   //       event_category: 'click on whatsapp',
   //       event_action: 'Mobile',
-  //       event_label: '+917041510802'
+  //       event_label: '+919033012303'
   //     });
   //   }
   // };
@@ -84,7 +84,7 @@ export function StickyButtons({ show, setShow }) {
           </li>
 
           <li className="download-pdf none-li inquiery-icon imgnone">
-            <a href="tel:+917041510802">
+            <a href="tel:+919033012303">
               <span className="icon">
                 <Phone />
               </span>
@@ -96,7 +96,7 @@ export function StickyButtons({ show, setShow }) {
               window?.gtag?.("event", "click", {
                 event_category: "click on whatsapp",
                 event_action: "Mobile",
-                event_label: "+917041510802",
+                event_label: "+919033012303",
               })
             }
               href="https://api.whatsapp.com/send?phone=917041510802&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
