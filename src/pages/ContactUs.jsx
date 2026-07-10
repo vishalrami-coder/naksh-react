@@ -41,7 +41,7 @@ function ContactUs() {
         <>
           <Link to="tel:+919033012303">+91 90330 12303</Link>
           <br />
-          <Link to="mailto:inquiry2@nakshtechnology.in">inquiry2@nakshtechnology.in</Link>
+          <Link to="mailto:inquiry@nakshtechnology.in">inquiry@nakshtechnology.in</Link>
         </>
       ),
     },
