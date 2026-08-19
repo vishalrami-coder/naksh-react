@@ -122,10 +122,10 @@ function Footer({ OnShowInquiry }) {
                     window?.gtag?.("event", "click", {
                       event_category: "click on whatsapp",
                       event_action: "Mobile",
-                      event_label: "+919033012303",
+                      event_label: "+919033074648",
                     })
                   }
-                    href="https://api.whatsapp.com/send?phone=919033012303&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
+                    href="https://api.whatsapp.com/send?phone=919033074648&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
                     target="_blank"
                     rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faWhatsapp} />

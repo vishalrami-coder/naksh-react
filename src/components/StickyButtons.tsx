@@ -43,24 +43,14 @@ export function StickyButtons({ show, setShow }) {
       setForm({ name: "", company: "", email: "", city: "", phone: "", requirement: "" });
       setCaptchaInput(""); setCaptcha(generateCaptcha());
       // onOpenChange(false);
+      // ✅ Close Bootstrap Modal
+      setShow(false);
+
+      // ✅ Stop loader
+      setIsSubmitting(false);
       navigate("/thank-you");
     } catch { setIsSubmitting(false); }
   };
-
-  // const handleWhatsAppClick = () => {
-  //   if (window.gtag) {
-  //     window.gtag('event', 'send', {
-  //       event_category: 'click on whatsapp',
-  //       event_action: 'Mobile',
-  //       event_label: '+919033012303'
-  //     });
-  //   }
-  // };
-
-  // const handleEnquiryClick = () => {
-  //   // open modal or trigger function here
-  //   console.log("Enquiry clicked");
-  // };
 
   return (
     <>
@@ -84,7 +74,8 @@ export function StickyButtons({ show, setShow }) {
           </li>
 
           <li className="download-pdf none-li inquiery-icon imgnone">
-            <a href="tel:+919033012303">
+            {/* <a href="tel:+919033074648"> */}
+            <a href="tel:+919033074648">
               <span className="icon">
                 <Phone />
               </span>
@@ -96,10 +87,10 @@ export function StickyButtons({ show, setShow }) {
               window?.gtag?.("event", "click", {
                 event_category: "click on whatsapp",
                 event_action: "Mobile",
-                event_label: "+919033012303",
+                event_label: "+919033074648",
               })
             }
-              href="https://api.whatsapp.com/send?phone=919033012303&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
+              href="https://api.whatsapp.com/send?phone=919033074648&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
               target="_blank"
               rel="noopener noreferrer">
               <img
@@ -124,7 +115,7 @@ export function StickyButtons({ show, setShow }) {
 
         <div className="book-app bgWhatsapp">
           <a
-            href="https://api.whatsapp.com/send?phone=919033012303&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
+            href="https://api.whatsapp.com/send?phone=919033074648&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
             target="_blank"
             rel="noopener noreferrer"
           >

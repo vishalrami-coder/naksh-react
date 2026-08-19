@@ -39,7 +39,8 @@ function ContactUs() {
       title: "Quick Contact",
       content: (
         <>
-          <Link to="tel:+919033012303">+91 90330 12303</Link>
+          {/* <Link to="tel:+919033074648">+91 90330 12303</Link> */}
+          <Link to="tel:+919033074648">+91 90330 74648</Link>
           <br />
           <Link to="mailto:inquiry@nakshtechnology.in">inquiry@nakshtechnology.in</Link>
         </>

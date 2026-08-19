@@ -11,15 +11,15 @@
     </li>
 
     <li class="download-pdf none-li inquiery-icon  imgnone">
-      <a href="tel:+919033012303" onclick="gtag('event', 'send', { 'event_category': 'click on Mobile', 'event_action': 'Mobile', 'event_label': '919033012303' });">
+      <a href="tel:+919033074648" onclick="gtag('event', 'send', { 'event_category': 'click on Mobile', 'event_action': 'Mobile', 'event_label': '919033074648' });">
         <span class="icon"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
         </span> <span class="btn-text">Call</span>
       </a>
     </li>
 
     <li class="whataspp-icon none-li imgnone">
-      <a onclick="gtag('event', 'send', { 'event_category': 'click on whatsapp', 'event_action': 'Mobile', 'event_label': '+919033012303' });"
-        href="https://api.whatsapp.com/send?phone=919033012303&amp;text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion." target="_blank">
+      <a onclick="gtag('event', 'send', { 'event_category': 'click on whatsapp', 'event_action': 'Mobile', 'event_label': '+919033074648' });"
+        href="https://api.whatsapp.com/send?phone=919033074648&amp;text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion." target="_blank">
         <span class="icon1"> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width: 30px;" alt="WhatsApp"></span> <span class="btn-text"> Whatsapp</span>
       </a>
     </li>
@@ -112,8 +112,8 @@
   </div>
 
   <div class="book-app" style="background: #2db640;">
-    <a onclick="gtag('event', 'send', { 'event_category': 'click on whatsapp', 'event_action': 'Mobile', 'event_label': '+919033012303' });"
-      href="https://api.whatsapp.com/send?phone=919033012303&amp;text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion." target="_blank"
+    <a onclick="gtag('event', 'send', { 'event_category': 'click on whatsapp', 'event_action': 'Mobile', 'event_label': '+919033074648' });"
+      href="https://api.whatsapp.com/send?phone=919033074648&amp;text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion." target="_blank"
       style="color:#FFF; font-size:14px;font-weight:600;"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" style="width: 20px;" alt="WhatsApp"> WhatsApp</a>
   </div>
 </div>

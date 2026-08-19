@@ -749,6 +749,7 @@ ul#sideService.open li {
 
 .WhatsAppBtn {
     background: #2db640 !important;
+    min-height: 50px;
 }
 
 .loaderSpiner {
@@ -814,6 +815,14 @@ ul#sideService.open li {
 
 .productListing~.productListing {
     padding-top: 0px;
+}
+
+.WhatsAppBtn  img {
+    max-width: 30px;
+}
+
+.WhatsAppBtn a {
+    justify-content: center;
 }
 
 /* -----------------------  2 side button ------------------------------------- */

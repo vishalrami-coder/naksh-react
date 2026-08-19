@@ -34,8 +34,10 @@ const slides = [
                 Talk directly with our automation experts for product selection, <br /> technical guidance, or urgent requirements.
             </>
         ),
-        btn: "+91 90330 12303",
-        link: "tel:+919033012303",
+        // btn: "+91 90330 12303",
+        // link: "tel:+919033074648",
+        btn: "+91 90330 74648",
+        link: "tel:+919033074648",
     },
     {
         img: banner3,
