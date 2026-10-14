@@ -21,9 +21,9 @@ function Thankyou() {
             <div className="industriesSec CustomPeding">
 
                 <div className="container">
-                    <div class="row">
-                        <div class="col-lg-12 mt-5 mb-5">
-                            <div class="caption-thankyou text-center">
+                    <div className="row">
+                        <div className="col-lg-12 mt-5 mb-5">
+                            <div className="caption-thankyou text-center">
                                 <h1>Thankyou !! Successfully Submitted</h1>
                                 <h2>Your Inquiry Has Been Successfully Submitted To The Concern Department.You Will Get A Reply Within 24 Hours From Our Side.....!!</h2>
                             </div>

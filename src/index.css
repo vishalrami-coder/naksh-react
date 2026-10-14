@@ -724,6 +724,7 @@ ul#sideService.open li {
 
 .footer-box .book-app {
     padding: 15px 0px;
+    cursor: pointer;
 }
 
 .footer-box .book-app a {

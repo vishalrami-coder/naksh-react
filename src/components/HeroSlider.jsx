@@ -101,7 +101,7 @@ function HeroSlider() {
 
         if (counterRef.current) {
             counterRef.current.innerHTML =
-                `<span class="current-slide">${current < 10 ? "0" + current : current}</span> / ${total < 10 ? "0" + total : total}`;
+                `<span className="current-slide">${current < 10 ? "0" + current : current}</span> / ${total < 10 ? "0" + total : total}`;
         }
     };
 
@@ -151,7 +151,7 @@ function HeroSlider() {
                     el: ".swiper-pagination",
                     clickable: true,
                     renderBullet: (index, className) =>
-                        `<span class="${className}"><i></i><b></b></span>`,
+                        `<span className="${className}"><i></i><b></b></span>`,
                 }}
                 navigation={{
                     nextEl: ".swiper-button-next",

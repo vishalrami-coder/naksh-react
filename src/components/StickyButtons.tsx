@@ -107,7 +107,7 @@ export function StickyButtons({ show, setShow }) {
         <div className="book-app bgInquery" id="req-apnmt2">
           <a
             className="nav_up click1"
-            href="#"
+            onClick={() => setShow(true)}
           >
             <i className="fa fa-envelope"></i> Enquire Now
           </a>
