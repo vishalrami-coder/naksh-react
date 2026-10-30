@@ -120,7 +120,7 @@ const ProductDetails = ({ image, smallTitle, mainTitle, description, short_descr
                                 ) : (
                                     <img
                                         src={huceenImage?.main_image || image}
-                                        alt="Naksh Technology Solutions LLP Img"
+                                        alt="Naksh Technology Solution LLP Img"
                                     />
                                 )}
                             </div>

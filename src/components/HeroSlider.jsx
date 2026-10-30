@@ -35,9 +35,9 @@ const slides = [
             </>
         ),
         // btn: "+91 90330 12303",
-        // link: "tel:+919033074648",
-        btn: "+91 90330 74648",
-        link: "tel:+919033074648",
+        // link: "tel:+919033012303",
+        btn: "+91 90330 12303",
+        link: "tel:+919033012303",
     },
     {
         img: banner3,
@@ -72,7 +72,7 @@ const slides = [
         desc: (
             <>
                 Smart power distribution, control, and automation solutions from <br />
-                Schneider-implemented and optimized by Naksh Technology Solutions LLP to <br />
+                Schneider-implemented and optimized by Naksh Technology Solution LLP to <br />
                 ensure efficiency, safety, and scalability.
             </>
         ),

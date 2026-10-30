@@ -11,7 +11,7 @@ function AboutSection({ children }) {
 
                     <div className="col-sm-12 col-md-6">
                         <div className="aboutImg">
-                            <img src={aboutImg} alt="About Naksh Technology Solutions LLP" />
+                            <img src={aboutImg} alt="About Naksh Technology Solution LLP" />
                         </div>
                     </div>
 
@@ -19,7 +19,7 @@ function AboutSection({ children }) {
                         <div className="aboutContent">
                             <SectionTitle
                                 smallTitle="About us"
-                                mainTitle="Naksh Technology Solutions LLP"
+                                mainTitle="Naksh Technology Solution LLP"
                                 className="mb-0"
                             />
 

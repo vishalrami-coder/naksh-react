@@ -74,8 +74,8 @@ export function StickyButtons({ show, setShow }) {
           </li>
 
           <li className="download-pdf none-li inquiery-icon imgnone">
-            {/* <a href="tel:+919033074648"> */}
-            <a href="tel:+919033074648">
+            {/* <a href="tel:+919033012303"> */}
+            <a href="tel:+919033012303">
               <span className="icon">
                 <Phone />
               </span>
@@ -87,10 +87,10 @@ export function StickyButtons({ show, setShow }) {
               window?.gtag?.("event", "click", {
                 event_category: "click on whatsapp",
                 event_action: "Mobile",
-                event_label: "+919033074648",
+                event_label: "+919033012303",
               })
             }
-              href="https://api.whatsapp.com/send?phone=919033074648&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
+              href="https://api.whatsapp.com/send?phone=919033012303&text=Hello Team Naksh Technology Solution LLP, I was going through your Website, Please connect me for product discussion."
               target="_blank"
               rel="noopener noreferrer">
               <img
@@ -115,7 +115,7 @@ export function StickyButtons({ show, setShow }) {
 
         <div className="book-app bgWhatsapp">
           <a
-            href="https://api.whatsapp.com/send?phone=919033074648&text=Hello Team Naksh Technology Solutions LLP, I was going through your Website, Please connect me for product discussion."
+            href="https://api.whatsapp.com/send?phone=919033012303&text=Hello Team Naksh Technology Solution LLP, I was going through your Website, Please connect me for product discussion."
             target="_blank"
             rel="noopener noreferrer"
           >
